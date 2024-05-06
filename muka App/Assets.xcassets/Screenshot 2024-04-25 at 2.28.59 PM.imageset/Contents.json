@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "compression-type" : "automatic",
+      "filename" : "Screenshot 2024-04-25 at 2.28.59 PM.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

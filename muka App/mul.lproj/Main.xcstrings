@@ -1,0 +1,906 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "0kB-Vr-uEE.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Start Quiz\"; ObjectID = \"0kB-Vr-uEE\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Start Quiz"
+          }
+        }
+      }
+    },
+    "0kB-Vr-uEE.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"0kB-Vr-uEE\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        }
+      }
+    },
+    "1MA-aX-ewG.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Explore\"; ObjectID = \"1MA-aX-ewG\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Explore"
+          }
+        }
+      }
+    },
+    "2qE-eg-ajb.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"detection\"; ObjectID = \"2qE-eg-ajb\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "detection"
+          }
+        }
+      }
+    },
+    "2wM-hb-6Ur.title" : {
+      "comment" : "Class = \"UIBarButtonItem\"; title = \"Skip\"; ObjectID = \"2wM-hb-6Ur\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Skip"
+          }
+        }
+      }
+    },
+    "4it-Sd-1xd.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"and improve\"; ObjectID = \"4it-Sd-1xd\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "and improve"
+          }
+        }
+      }
+    },
+    "5gB-NS-487.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Hello\"; ObjectID = \"5gB-NS-487\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Hello"
+          }
+        }
+      }
+    },
+    "6ja-3J-nsk.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Anywhere.\"; ObjectID = \"6ja-3J-nsk\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Anywhere."
+          }
+        }
+      }
+    },
+    "6Yx-Gu-Brf.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"multiple Quizzes\"; ObjectID = \"6Yx-Gu-Brf\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "multiple Quizzes"
+          }
+        }
+      }
+    },
+    "7zn-lv-rYM.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"them offline. Now learn at your own pace.\"; ObjectID = \"7zn-lv-rYM\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "them offline. Now learn at your own pace."
+          }
+        }
+      }
+    },
+    "9Dk-0I-3mp.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Change Password\"; ObjectID = \"9Dk-0I-3mp\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Change Password"
+          }
+        }
+      }
+    },
+    "9lL-B4-6tv.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Note:\"; ObjectID = \"9lL-B4-6tv\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Note:"
+          }
+        }
+      }
+    },
+    "61o-0V-54u.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Just Scan the your signs and get\"; ObjectID = \"61o-0V-54u\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Just Scan the your signs and get"
+          }
+        }
+      }
+    },
+    "axQ-v3-Qrl.headerTitle" : {
+      "comment" : "Class = \"UITableViewSection\"; headerTitle = \"More Information\"; ObjectID = \"axQ-v3-Qrl\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "More Information"
+          }
+        }
+      }
+    },
+    "B0B-XI-u7l.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Q1. What does the below sign indicates?\"; ObjectID = \"B0B-XI-u7l\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Q1. What does the below sign indicates?"
+          }
+        }
+      }
+    },
+    "cUI-IH-YPG.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"2:30 mins\"; ObjectID = \"cUI-IH-YPG\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "2:30 mins"
+          }
+        }
+      }
+    },
+    "d9m-WP-NTR.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Naman Malhotra\"; ObjectID = \"d9m-WP-NTR\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Naman Malhotra"
+          }
+        }
+      }
+    },
+    "dVO-c8-Mow.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"00. What is ISL?\"; ObjectID = \"dVO-c8-Mow\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "00. What is ISL?"
+          }
+        }
+      }
+    },
+    "dwI-fp-HnA.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Manpreet Singh\"; ObjectID = \"dwI-fp-HnA\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Manpreet Singh"
+          }
+        }
+      }
+    },
+    "eOD-EM-edq.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Bronze\"; ObjectID = \"eOD-EM-edq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Bronze"
+          }
+        }
+      }
+    },
+    "Etd-De-5nQ.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"instant results\"; ObjectID = \"Etd-De-5nQ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "instant results"
+          }
+        }
+      }
+    },
+    "F6t-aN-Bkr.headerTitle" : {
+      "comment" : "Class = \"UITableViewSection\"; headerTitle = \"Medals\"; ObjectID = \"F6t-aN-Bkr\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Medals"
+          }
+        }
+      }
+    },
+    "FWb-54-zrB.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Welcome to\"; ObjectID = \"FWb-54-zrB\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Welcome to"
+          }
+        }
+      }
+    },
+    "g8W-z5-rKs.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"1 hr 10 min\"; ObjectID = \"g8W-z5-rKs\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "1 hr 10 min"
+          }
+        }
+      }
+    },
+    "GhP-Mi-dnc.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"02. Alphabelts Part-2\"; ObjectID = \"GhP-Mi-dnc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "02. Alphabelts Part-2"
+          }
+        }
+      }
+    },
+    "GYU-9Q-8Dm.headerTitle" : {
+      "comment" : "Class = \"UITableViewSection\"; headerTitle = \"Badges\"; ObjectID = \"GYU-9Q-8Dm\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Badges"
+          }
+        }
+      }
+    },
+    "h4w-co-eyj.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Sign Delegate\"; ObjectID = \"h4w-co-eyj\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Sign Delegate"
+          }
+        }
+      }
+    },
+    "h5r-gP-YWa.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"10 Lessons\"; ObjectID = \"h5r-gP-YWa\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "10 Lessons"
+          }
+        }
+      }
+    },
+    "hFa-bD-w62.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Next\"; ObjectID = \"hFa-bD-w62\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Next"
+          }
+        }
+      }
+    },
+    "hFa-bD-w62.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"hFa-bD-w62\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        }
+      }
+    },
+    "hZd-yj-2bE.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"with simple\"; ObjectID = \"hZd-yj-2bE\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "with simple"
+          }
+        }
+      }
+    },
+    "I4R-fZ-FfO.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Silver\"; ObjectID = \"I4R-fZ-FfO\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Silver"
+          }
+        }
+      }
+    },
+    "jAM-MO-6nW.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Your Activity\"; ObjectID = \"jAM-MO-6nW\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Your Activity"
+          }
+        }
+      }
+    },
+    "K65-lC-kZv.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"\\\"Introduction to Indian Sign Language\\\" is a specialised course focusing on the unique…\"; ObjectID = \"K65-lC-kZv\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "\"Introduction to Indian Sign Language\" is a specialised course focusing on the unique…"
+          }
+        }
+      }
+    },
+    "kcN-7K-Ls3.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Manpreet Singh\"; ObjectID = \"kcN-7K-Ls3\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Manpreet Singh"
+          }
+        }
+      }
+    },
+    "kpX-hH-DiB.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Q1. What does the below sign indicates?\"; ObjectID = \"kpX-hH-DiB\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Q1. What does the below sign indicates?"
+          }
+        }
+      }
+    },
+    "KVG-zP-kdi.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Question 1 of 5\"; ObjectID = \"KVG-zP-kdi\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Question 1 of 5"
+          }
+        }
+      }
+    },
+    "m7d-0j-aXB.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Gold\"; ObjectID = \"m7d-0j-aXB\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Gold"
+          }
+        }
+      }
+    },
+    "MjY-F5-tWJ.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"2:30 mins\"; ObjectID = \"MjY-F5-tWJ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "2:30 mins"
+          }
+        }
+      }
+    },
+    "mwP-ml-dzj.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Take your Picture\"; ObjectID = \"mwP-ml-dzj\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Take your Picture"
+          }
+        }
+      }
+    },
+    "N1r-AK-Dix.title" : {
+      "comment" : "Class = \"UITabBarItem\"; title = \"Challenges\"; ObjectID = \"N1r-AK-Dix\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Challenges"
+          }
+        }
+      }
+    },
+    "N9g-p4-Kbe.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Thankyou\"; ObjectID = \"N9g-p4-Kbe\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Thankyou"
+          }
+        }
+      }
+    },
+    "nMs-7C-rdc.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Delete Account\"; ObjectID = \"nMs-7C-rdc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Delete Account"
+          }
+        }
+      }
+    },
+    "o3c-DA-ljh.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"01. Basics of ISL?\"; ObjectID = \"o3c-DA-ljh\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "01. Basics of ISL?"
+          }
+        }
+      }
+    },
+    "OCl-Af-RGM.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Indian Sign Language\"; ObjectID = \"OCl-Af-RGM\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Indian Sign Language"
+          }
+        }
+      }
+    },
+    "oj6-r9-WI8.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Anytime\"; ObjectID = \"oj6-r9-WI8\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Anytime"
+          }
+        }
+      }
+    },
+    "OOV-px-g89.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"02. Alphabelts Part-1\"; ObjectID = \"OOV-px-g89\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "02. Alphabelts Part-1"
+          }
+        }
+      }
+    },
+    "PH0-KD-4sj.headerTitle" : {
+      "comment" : "Class = \"UITableViewSection\"; headerTitle = \"Account Action\"; ObjectID = \"PH0-KD-4sj\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Account Action"
+          }
+        }
+      }
+    },
+    "qie-Yy-fvq.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Course1\"; ObjectID = \"qie-Yy-fvq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Course1"
+          }
+        }
+      }
+    },
+    "qie-Yy-fvq.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"qie-Yy-fvq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        }
+      }
+    },
+    "Qo6-N0-iK1.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Become more efficient in sign language by\"; ObjectID = \"Qo6-N0-iK1\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Become more efficient in sign language by"
+          }
+        }
+      }
+    },
+    "QqT-gE-ikU.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Get Started\"; ObjectID = \"QqT-gE-ikU\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Get Started"
+          }
+        }
+      }
+    },
+    "QqT-gE-ikU.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"QqT-gE-ikU\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        }
+      }
+    },
+    "R8Q-A1-rwO.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"solving the daily assessments in app\"; ObjectID = \"R8Q-A1-rwO\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "solving the daily assessments in app"
+          }
+        }
+      }
+    },
+    "sMY-of-ncD.headerTitle" : {
+      "comment" : "Class = \"UITableViewSection\"; headerTitle = \"Courses\"; ObjectID = \"sMY-of-ncD\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Courses"
+          }
+        }
+      }
+    },
+    "tDq-IQ-A3h.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Hello,\"; ObjectID = \"tDq-IQ-A3h\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Hello,"
+          }
+        }
+      }
+    },
+    "Tu0-LH-k4q.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Logout\"; ObjectID = \"Tu0-LH-k4q\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Logout"
+          }
+        }
+      }
+    },
+    "U0P-8i-xGI.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Search for the\"; ObjectID = \"U0P-8i-xGI\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Search for the"
+          }
+        }
+      }
+    },
+    "UCx-lZ-CWt.title" : {
+      "comment" : "Class = \"UITabBarItem\"; title = \"Practise\"; ObjectID = \"UCx-lZ-CWt\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Practise"
+          }
+        }
+      }
+    },
+    "uRO-eN-1VC.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Basics of signs\"; ObjectID = \"uRO-eN-1VC\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Basics of signs"
+          }
+        }
+      }
+    },
+    "V4a-Vd-69C.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"signs effortlessly\"; ObjectID = \"V4a-Vd-69C\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "signs effortlessly"
+          }
+        }
+      }
+    },
+    "vQj-6d-R1n.title" : {
+      "comment" : "Class = \"UITabBarItem\"; title = \"Courses\"; ObjectID = \"vQj-6d-R1n\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Courses"
+          }
+        }
+      }
+    },
+    "xBe-v7-jh7.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"You can download your lessons to watch \\noffline\"; ObjectID = \"xBe-v7-jh7\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You can download your lessons to watch \noffline"
+          }
+        }
+      }
+    },
+    "xe2-r0-svf.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Please\"; ObjectID = \"xe2-r0-svf\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Please"
+          }
+        }
+      }
+    },
+    "xOW-K8-Y32.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"your skills\"; ObjectID = \"xOW-K8-Y32\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "your skills"
+          }
+        }
+      }
+    },
+    "XS2-Gu-KO9.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"2:30 mins\"; ObjectID = \"XS2-Gu-KO9\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "2:30 mins"
+          }
+        }
+      }
+    },
+    "XUr-Mx-4aK.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Introduuction to Indian Sign Language\"; ObjectID = \"XUr-Mx-4aK\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Introduuction to Indian Sign Language"
+          }
+        }
+      }
+    },
+    "y6a-cV-T9U.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Notification\"; ObjectID = \"y6a-cV-T9U\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Notification"
+          }
+        }
+      }
+    },
+    "Ydd-dX-QFU.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Goodbye\"; ObjectID = \"Ydd-dX-QFU\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Goodbye"
+          }
+        }
+      }
+    },
+    "YYH-m9-uk7.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"2:30 mins\"; ObjectID = \"YYH-m9-uk7\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "2:30 mins"
+          }
+        }
+      }
+    },
+    "z2z-2m-bBc.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Learn the\"; ObjectID = \"z2z-2m-bBc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Learn the"
+          }
+        }
+      }
+    },
+    "zAA-Sj-U3C.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Question 1 of 5\"; ObjectID = \"zAA-Sj-U3C\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Question 1 of 5"
+          }
+        }
+      }
+    },
+    "zgB-eu-Kaq.headerTitle" : {
+      "comment" : "Class = \"UITableViewSection\"; headerTitle = \"Section-2\"; ObjectID = \"zgB-eu-Kaq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Section-2"
+          }
+        }
+      }
+    },
+    "zgl-Me-Nrh.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Achievements\"; ObjectID = \"zgl-Me-Nrh\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Achievements"
+          }
+        }
+      }
+    },
+    "ZGO-Fb-u5P.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"mūka\"; ObjectID = \"ZGO-Fb-u5P\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "mūka"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
