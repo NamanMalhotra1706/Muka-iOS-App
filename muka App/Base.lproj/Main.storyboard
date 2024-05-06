@@ -451,7 +451,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="95x-d3-0Tc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7443.5114503816794" y="1150"/>
+            <point key="canvasLocation" x="7317" y="1208"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -830,7 +830,7 @@ offline</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pSO-Za-d07" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3176" y="2039"/>
+            <point key="canvasLocation" x="-2631" y="2536"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Lic-ir-iK0">
@@ -1027,7 +1027,7 @@ offline</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4YN-om-laW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9863.3587786259541" y="1150"/>
+            <point key="canvasLocation" x="3837" y="2321"/>
         </scene>
         <!--Achievement View Controller-->
         <scene sceneID="y2u-zR-Gts">
@@ -1179,7 +1179,7 @@ offline</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1Y-EV-OGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10893.893129770991" y="1159.8591549295775"/>
+            <point key="canvasLocation" x="10894" y="1150"/>
         </scene>
         <!--Lessons View Controller-->
         <scene sceneID="d46-kD-2su">
@@ -1228,56 +1228,7 @@ offline</string>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LessonCell" id="PZq-Hv-GU1" customClass="LessonCell" customModule="muka_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="81"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Y8u-Gm-o5h">
-                                            <rect key="frame" x="0.0" y="0.0" width="353" height="81"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2024-04-26 at 12.28.27 PM" translatesAutoresizingMaskIntoConstraints="NO" id="VRQ-J2-rQn">
-                                                    <rect key="frame" x="24" y="22" width="40" height="36"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="36" id="cys-Cv-Km8"/>
-                                                        <constraint firstAttribute="width" constant="40" id="to1-O4-WJS"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00. What is ISL?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfD-76-Zgt">
-                                                    <rect key="frame" x="121" y="15" width="110" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pm5-nm-fhb">
-                                                    <rect key="frame" x="121" y="40" width="208" height="4"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </progressView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2:30 mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDQ-h2-a3V">
-                                                    <rect key="frame" x="265" y="52" width="64" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="VRQ-J2-rQn" firstAttribute="top" secondItem="Y8u-Gm-o5h" secondAttribute="top" constant="22" id="2c3-4L-i95"/>
-                                                <constraint firstAttribute="trailing" secondItem="VRQ-J2-rQn" secondAttribute="trailing" constant="289" id="8qy-Qr-xYx"/>
-                                                <constraint firstItem="VRQ-J2-rQn" firstAttribute="leading" secondItem="Y8u-Gm-o5h" secondAttribute="leading" constant="24" id="koq-39-ClC"/>
-                                                <constraint firstAttribute="bottom" secondItem="VRQ-J2-rQn" secondAttribute="bottom" constant="23" id="ubm-Gr-jxP"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="0.15296461092715233" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <size key="customSize" width="353" height="81"/>
-                                        <connections>
-                                            <outlet property="lessonDescriptionLabel" destination="HfD-76-Zgt" id="Ct1-Zg-Gye"/>
-                                            <outlet property="lessonImageView" destination="VRQ-J2-rQn" id="avP-3o-OHf"/>
-                                            <outlet property="timingLabel" destination="wDQ-h2-a3V" id="tBd-Fi-GPB"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XqQ-4T-4UY"/>
@@ -1308,7 +1259,7 @@ offline</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8t-CR-CEp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2092" y="1210"/>
+            <point key="canvasLocation" x="-1240" y="1208"/>
         </scene>
         <!--Quiz 1-->
         <scene sceneID="orO-KA-Pnk">
@@ -1585,10 +1536,10 @@ offline</string>
                                 <rect key="frame" x="0.0" y="420" width="393" height="349"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="courseCell" rowHeight="60" id="urz-6l-qFY" customClass="CourseTableViewCell" customModule="muka_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="courseCell" rowHeight="60" id="urz-6l-qFY" customClass="CourseCell" customModule="muka_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="urz-6l-qFY" id="YfU-Q3-vj2" customClass="CourseTableViewCell" customModule="muka_App" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="urz-6l-qFY" id="YfU-Q3-vj2" customClass="CourseCell" customModule="muka_App" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -1625,7 +1576,7 @@ offline</string>
                                                                         <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                     </buttonConfiguration>
                                                                     <connections>
-                                                                        <segue destination="LsR-r4-Hps" kind="show" id="Rgn-JA-P3W"/>
+                                                                        <segue destination="LsR-r4-Hps" kind="show" id="ctu-wl-gLR"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -1655,11 +1606,11 @@ offline</string>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="courseIcon" destination="VO2-5O-Kuw" id="aNN-4N-g75"/>
-                                            <outlet property="courseProgressIcon" destination="xzP-8v-Kib" id="lGQ-4K-Nky"/>
-                                            <outlet property="courseStatus" destination="qKy-ne-gac" id="lwq-eg-J8u"/>
-                                            <outlet property="courseTitle" destination="dFe-3j-Mxj" id="2m8-3D-QPC"/>
-                                            <outlet property="takeAssessmentButton" destination="Qgs-PA-s6Q" id="C6p-zJ-g8i"/>
+                                            <outlet property="courseIconImageView" destination="VO2-5O-Kuw" id="ZUY-zv-0Bb"/>
+                                            <outlet property="courseNameLabel" destination="dFe-3j-Mxj" id="Dog-7S-Veq"/>
+                                            <outlet property="courseProgressIcon" destination="xzP-8v-Kib" id="Yic-Ap-oil"/>
+                                            <outlet property="courseStatus" destination="qKy-ne-gac" id="pzd-sP-3ls"/>
+                                            <outlet property="takeAssessmentButton" destination="Qgs-PA-s6Q" id="An9-Pc-H8W"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1705,12 +1656,12 @@ offline</string>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="E18-MX-f7f" id="23H-nJ-vNQ"/>
-                        <segue destination="ygT-hg-YbR" kind="show" identifier="CourseDetailPage" id="fiX-B7-ilW"/>
+                        <segue destination="ygT-hg-YbR" kind="show" identifier="showLessons" id="fiX-B7-ilW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kr1-8h-z8J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3263.3587786259541" y="1209.8591549295775"/>
+            <point key="canvasLocation" x="-2630" y="1210"/>
         </scene>
         <!--Practise-->
         <scene sceneID="hdd-Cl-1OG">
@@ -1979,12 +1930,11 @@ offline</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SL0-cB-nQo"/>
+        <segue reference="rgi-7M-OoT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="100%" width="186" height="162"/>
         <image name="Screenshot 2024-04-26 at 11.26.43 AM" width="637" height="332"/>
-        <image name="Screenshot 2024-04-26 at 12.28.27 PM" width="278" height="278"/>
         <image name="Thankyou sign" width="1356" height="925"/>
         <image name="Thumbs up" width="208" height="158"/>
         <image name="book.pages.fill" catalog="system" width="107" height="128"/>
@@ -1997,13 +1947,13 @@ offline</string>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <image name="upload complete" width="228" height="158"/>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

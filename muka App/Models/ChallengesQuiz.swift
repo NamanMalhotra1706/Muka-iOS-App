@@ -7,7 +7,7 @@ struct challengesQuestion {
     let imageURL: URL?
 }
 
-struct challengeQuiz{
+class challengeQuiz{
     let sampleQuestionsChallanges: [challengesQuestion] = [
         challengesQuestion(questionId: "1", questionText: "How to sign 'M' in sign language?", imageURL: nil),
         challengesQuestion(questionId: "2", questionText: "Please demonstrate the sign for 'thank you'.", imageURL: nil),
@@ -21,7 +21,7 @@ struct challengeQuiz{
         var challengesScore = 0
     
         
-    mutating func checkAnswer() -> Bool {
+     func checkAnswer() -> Bool {
         
         return false
     }
@@ -41,7 +41,7 @@ struct challengeQuiz{
     }
     
     
-    mutating func nextQuestion()->Bool{
+    func nextQuestion()->Bool{
         if questionNumber+1 <  sampleQuestionsChallanges.count{
             questionNumber+=1
             return false

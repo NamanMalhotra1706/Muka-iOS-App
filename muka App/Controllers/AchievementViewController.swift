@@ -26,9 +26,6 @@ class AchievementViewController: UIViewController, UICollectionViewDataSource, U
                     self.userNameLabel.text = userProfile.name
                     
                 }
-        
-            
-        
         // Set up initial medals and badges
         medals = [
             Medal(imageName: "Gold", title: "Gold"),
