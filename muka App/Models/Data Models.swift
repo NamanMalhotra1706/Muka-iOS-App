@@ -36,7 +36,7 @@ struct Assessment {
 }
 
 // Data model for User
-class User {
+class UserModel {
     var username: String
     var userEmail: String
     var password: String

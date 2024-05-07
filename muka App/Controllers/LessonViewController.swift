@@ -62,6 +62,8 @@ extension LessonViewController: UICollectionViewDelegate, UICollectionViewDataSo
                 return cell
             }
         }
+   
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let path = Bundle.main.path(forResource: "Accessibility", ofType: "mp4") else{
             print("video not found")
@@ -75,11 +77,6 @@ extension LessonViewController: UICollectionViewDelegate, UICollectionViewDataSo
             player.play()
         }
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-            // Return the desired spacing between sections
-            return 10 // Adjust the value according to your preference
-        }
 
     @objc func takeAssessmentButtonTapped() {
             // Handle "Take Assessment" button tap
