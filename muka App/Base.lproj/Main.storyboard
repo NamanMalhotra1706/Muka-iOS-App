@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mxK-PE-c1J">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rSe-dh-kOI">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G05-9h-eJW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4480" y="2074"/>
+            <point key="canvasLocation" x="-4219" y="2536"/>
         </scene>
         <!--Practise Tab View Controller-->
         <scene sceneID="Jeg-9N-rHh">
@@ -1181,85 +1181,161 @@ offline</string>
             </objects>
             <point key="canvasLocation" x="10894" y="1150"/>
         </scene>
-        <!--Lessons View Controller-->
-        <scene sceneID="d46-kD-2su">
+        <!--Lesson View Controller-->
+        <scene sceneID="BYo-up-aAs">
             <objects>
-                <viewController id="ygT-hg-YbR" customClass="LessonsViewController" customModule="muka_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Wbw-qb-grW">
+                <viewController id="oT6-em-bg7" customClass="LessonViewController" customModule="muka_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bja-Mc-zC1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduuction to Indian Sign Language" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUr-Mx-4aK">
-                                <rect key="frame" x="40" y="79" width="313" height="76"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdV-Vy-QZn">
+                                <rect key="frame" x="16" y="118" width="361" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2024-04-26 at 11.26.43 AM" translatesAutoresizingMaskIntoConstraints="NO" id="wLd-Hk-Jsm">
-                                <rect key="frame" x="40" y="163" width="313" height="109"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10 Lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5r-gP-YWa">
-                                <rect key="frame" x="40" y="396" width="105" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHa-K6-eQ1">
+                                <rect key="frame" x="16" y="345" width="361" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teS-FT-uoW">
+                                <rect key="frame" x="16" y="399" width="251" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 hr 10 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8W-z5-rKs">
-                                <rect key="frame" x="282" y="400" width="71" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total timing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewx-3j-7LV">
+                                <rect key="frame" x="275" y="399" width="102" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.25098040700000002" green="0.25098040700000002" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Introduction to Indian Sign Language&quot; is a specialised course focusing on the unique…" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K65-lC-kZv">
-                                <rect key="frame" x="41" y="280" width="310" height="93"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gQZ-Vn-cSe">
-                                <rect key="frame" x="20" y="428" width="353" height="370"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eHa-AD-x3q">
+                                <rect key="frame" x="16" y="442" width="361" height="327"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aJu-6U-mZH">
-                                    <size key="itemSize" width="353" height="81"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TIV-iN-x7m">
+                                    <size key="itemSize" width="361" height="78"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LessonCollectionViewCell" id="HqH-3I-uP2" customClass="LessonCollectionViewCell" customModule="muka_App" customModuleProvider="target">
+                                        <rect key="frame" x="5.666666666666667" y="0.0" width="350" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5DY-az-4CI">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lesson title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hS-Ta-BXT">
+                                                    <rect key="frame" x="101" y="18" width="241" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQw-MU-QxJ">
+                                                    <rect key="frame" x="101" y="41" width="241" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8qg-Ap-uin">
+                                                    <rect key="frame" x="18" y="18" width="42" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="Uoz-pg-hN6"/>
+                                                        <constraint firstAttribute="width" constant="42" id="kpk-9F-tiu"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="8hS-Ta-BXT" secondAttribute="bottom" constant="34" id="3ai-gV-3ju"/>
+                                                <constraint firstAttribute="trailing" secondItem="8hS-Ta-BXT" secondAttribute="trailing" constant="8" id="5Sb-j0-JPY"/>
+                                                <constraint firstItem="8hS-Ta-BXT" firstAttribute="leading" secondItem="8qg-Ap-uin" secondAttribute="trailing" constant="41" id="7dl-Hu-XFy"/>
+                                                <constraint firstItem="uQw-MU-QxJ" firstAttribute="top" secondItem="8hS-Ta-BXT" secondAttribute="bottom" constant="5" id="8tX-E5-7Nl"/>
+                                                <constraint firstItem="uQw-MU-QxJ" firstAttribute="leading" secondItem="8qg-Ap-uin" secondAttribute="trailing" constant="41" id="LWX-eJ-sGN"/>
+                                                <constraint firstAttribute="trailing" secondItem="8qg-Ap-uin" secondAttribute="trailing" constant="290" id="PKc-0A-ic1"/>
+                                                <constraint firstItem="8hS-Ta-BXT" firstAttribute="top" secondItem="5DY-az-4CI" secondAttribute="top" constant="18" id="T1k-YQ-1zw"/>
+                                                <constraint firstAttribute="bottom" secondItem="8qg-Ap-uin" secondAttribute="bottom" constant="18" id="UNN-a3-ouz"/>
+                                                <constraint firstAttribute="trailing" secondItem="uQw-MU-QxJ" secondAttribute="trailing" constant="8" id="cjb-7y-oQn"/>
+                                                <constraint firstItem="8qg-Ap-uin" firstAttribute="top" secondItem="5DY-az-4CI" secondAttribute="top" constant="18" id="huy-EQ-NLW"/>
+                                                <constraint firstItem="8qg-Ap-uin" firstAttribute="leading" secondItem="5DY-az-4CI" secondAttribute="leading" constant="18" id="l0a-lK-Dru"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="350" height="70"/>
+                                        <connections>
+                                            <outlet property="lessonDuration" destination="uQw-MU-QxJ" id="uJg-ZK-kWJ"/>
+                                            <outlet property="lessonImage" destination="8qg-Ap-uin" id="GFq-6q-kYz"/>
+                                            <outlet property="lessonTitle" destination="8hS-Ta-BXT" id="E6L-Em-abV"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="A5l-ij-k71">
+                                        <rect key="frame" x="0.0" y="80" width="361" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MJR-O0-9nZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NT-OB-87n">
+                                                    <rect key="frame" x="66" y="22" width="228" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Take Assessment"/>
+                                                </button>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x38-3R-IIt">
+                                <rect key="frame" x="16" y="156" width="361" height="165"/>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="XqQ-4T-4UY"/>
+                        <viewLayoutGuide key="safeArea" id="CPM-hd-iZx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="K65-lC-kZv" secondAttribute="bottom" constant="479" id="0Sn-oa-VUE"/>
-                            <constraint firstItem="XUr-Mx-4aK" firstAttribute="leading" secondItem="Wbw-qb-grW" secondAttribute="leading" constant="40" id="9ga-aS-c1P"/>
-                            <constraint firstItem="K65-lC-kZv" firstAttribute="top" secondItem="wLd-Hk-Jsm" secondAttribute="bottom" constant="8" id="AV6-qI-kKj"/>
-                            <constraint firstAttribute="trailing" secondItem="XUr-Mx-4aK" secondAttribute="trailing" constant="40" id="E9y-pw-S2r"/>
-                            <constraint firstItem="wLd-Hk-Jsm" firstAttribute="trailing" secondItem="Wbw-qb-grW" secondAttribute="trailingMargin" constant="-24" id="PBS-kS-CdX"/>
-                            <constraint firstItem="XUr-Mx-4aK" firstAttribute="top" secondItem="Wbw-qb-grW" secondAttribute="top" constant="79" id="SGh-Kg-l7K"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="wLd-Hk-Jsm" secondAttribute="bottom" constant="497" id="UpD-fp-Xtm"/>
-                            <constraint firstAttribute="trailing" secondItem="K65-lC-kZv" secondAttribute="trailing" constant="42" id="Z00-M4-13C"/>
-                            <constraint firstItem="K65-lC-kZv" firstAttribute="leading" secondItem="Wbw-qb-grW" secondAttribute="leading" constant="41" id="dvt-rI-Wry"/>
-                            <constraint firstItem="wLd-Hk-Jsm" firstAttribute="leading" secondItem="Wbw-qb-grW" secondAttribute="leadingMargin" constant="24" id="oTH-Vv-ddJ"/>
-                            <constraint firstItem="wLd-Hk-Jsm" firstAttribute="top" secondItem="XUr-Mx-4aK" secondAttribute="bottom" constant="8" id="vbc-Kk-KM8"/>
-                            <constraint firstAttribute="bottom" secondItem="XUr-Mx-4aK" secondAttribute="bottom" constant="697" id="yrz-NA-X9d"/>
+                            <constraint firstItem="CPM-hd-iZx" firstAttribute="trailing" secondItem="rHa-K6-eQ1" secondAttribute="trailing" constant="16" id="3Nl-ug-r8P"/>
+                            <constraint firstItem="rHa-K6-eQ1" firstAttribute="top" secondItem="x38-3R-IIt" secondAttribute="bottom" constant="24" id="3cK-m0-ekX"/>
+                            <constraint firstItem="x38-3R-IIt" firstAttribute="top" secondItem="RdV-Vy-QZn" secondAttribute="bottom" constant="8" id="7tU-mZ-chj"/>
+                            <constraint firstItem="eHa-AD-x3q" firstAttribute="bottom" secondItem="CPM-hd-iZx" secondAttribute="bottom" id="8kT-4V-zVB"/>
+                            <constraint firstItem="ewx-3j-7LV" firstAttribute="top" secondItem="rHa-K6-eQ1" secondAttribute="bottom" constant="34" id="C5e-xJ-Svk"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="rHa-K6-eQ1" secondAttribute="bottom" constant="404" id="IuU-fT-gAd"/>
+                            <constraint firstItem="CPM-hd-iZx" firstAttribute="trailing" secondItem="RdV-Vy-QZn" secondAttribute="trailing" constant="16" id="K2H-cj-3jf"/>
+                            <constraint firstItem="teS-FT-uoW" firstAttribute="leading" secondItem="CPM-hd-iZx" secondAttribute="leading" constant="16" id="OOy-6c-W99"/>
+                            <constraint firstItem="eHa-AD-x3q" firstAttribute="leading" secondItem="CPM-hd-iZx" secondAttribute="leading" constant="16" id="P3M-cc-jjR"/>
+                            <constraint firstItem="x38-3R-IIt" firstAttribute="leading" secondItem="CPM-hd-iZx" secondAttribute="leading" constant="16" id="ROB-Qe-op2"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="RdV-Vy-QZn" secondAttribute="bottom" constant="621" id="TRE-Ah-Dlq"/>
+                            <constraint firstItem="eHa-AD-x3q" firstAttribute="top" secondItem="teS-FT-uoW" secondAttribute="bottom" constant="19" id="VG8-np-O9i"/>
+                            <constraint firstItem="teS-FT-uoW" firstAttribute="top" secondItem="rHa-K6-eQ1" secondAttribute="bottom" constant="34" id="Vat-EO-Bvn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ewx-3j-7LV" secondAttribute="bottom" constant="353" id="Xu3-4K-0OE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="teS-FT-uoW" secondAttribute="trailing" constant="110" id="bSL-cq-JGm"/>
+                            <constraint firstItem="RdV-Vy-QZn" firstAttribute="top" secondItem="CPM-hd-iZx" secondAttribute="top" constant="15" id="fBr-fK-Q2z"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="teS-FT-uoW" secondAttribute="bottom" constant="346" id="iCA-ks-3G9"/>
+                            <constraint firstItem="ewx-3j-7LV" firstAttribute="leading" secondItem="teS-FT-uoW" secondAttribute="trailing" constant="8" id="kK5-0k-RSg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="x38-3R-IIt" secondAttribute="bottom" constant="448" id="mtf-mw-OsG"/>
+                            <constraint firstItem="rHa-K6-eQ1" firstAttribute="leading" secondItem="CPM-hd-iZx" secondAttribute="leading" constant="16" id="ojb-c1-dz9"/>
+                            <constraint firstItem="CPM-hd-iZx" firstAttribute="trailing" secondItem="eHa-AD-x3q" secondAttribute="trailing" constant="16" id="rFx-qV-G8B"/>
+                            <constraint firstItem="RdV-Vy-QZn" firstAttribute="leading" secondItem="CPM-hd-iZx" secondAttribute="leading" constant="16" id="rJM-f1-U8m"/>
+                            <constraint firstItem="CPM-hd-iZx" firstAttribute="trailing" secondItem="ewx-3j-7LV" secondAttribute="trailing" constant="16" id="rQ5-DR-EIS"/>
+                            <constraint firstItem="CPM-hd-iZx" firstAttribute="trailing" secondItem="x38-3R-IIt" secondAttribute="trailing" constant="16" id="ygN-Ay-tDq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ozF-iJ-vA3"/>
+                    <navigationItem key="navigationItem" id="kDd-lb-jcd"/>
                     <connections>
-                        <outlet property="lessonDescriptionLabel" destination="K65-lC-kZv" id="Vzh-yz-jkw"/>
-                        <outlet property="lessonImageView" destination="wLd-Hk-Jsm" id="EjS-6m-0yA"/>
-                        <outlet property="lessonNameLabel" destination="XUr-Mx-4aK" id="ufz-Pl-Mk1"/>
-                        <outlet property="lessonsCollectionView" destination="gQZ-Vn-cSe" id="VmT-ad-hDK"/>
-                        <outlet property="lessonsCountLabel" destination="h5r-gP-YWa" id="R7c-E9-Mgw"/>
+                        <outlet property="courseDescription" destination="rHa-K6-eQ1" id="e18-U1-l4T"/>
+                        <outlet property="courseImage" destination="x38-3R-IIt" id="rEI-Kg-V3A"/>
+                        <outlet property="courseTitle" destination="RdV-Vy-QZn" id="EHa-Fd-Jah"/>
+                        <outlet property="lessonCollectionView" destination="eHa-AD-x3q" id="gL4-Je-NxY"/>
+                        <outlet property="numberOfLessons" destination="teS-FT-uoW" id="BE2-tf-QRP"/>
+                        <outlet property="totalDuration" destination="ewx-3j-7LV" id="NIK-RP-Wbg"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s8t-CR-CEp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Rj-Nn-DJL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1240" y="1208"/>
+            <point key="canvasLocation" x="-1538.1679389312976" y="1209.8591549295775"/>
         </scene>
         <!--Quiz 1-->
         <scene sceneID="orO-KA-Pnk">
@@ -1536,7 +1612,7 @@ offline</string>
                                 <rect key="frame" x="0.0" y="420" width="393" height="349"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="courseCell" rowHeight="60" id="urz-6l-qFY" customClass="CourseCell" customModule="muka_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CourseCell" rowHeight="60" id="urz-6l-qFY" customClass="CourseCell" customModule="muka_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="urz-6l-qFY" id="YfU-Q3-vj2" customClass="CourseCell" customModule="muka_App" customModuleProvider="target">
@@ -1656,7 +1732,7 @@ offline</string>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="E18-MX-f7f" id="23H-nJ-vNQ"/>
-                        <segue destination="ygT-hg-YbR" kind="show" identifier="showLessons" id="fiX-B7-ilW"/>
+                        <segue destination="oT6-em-bg7" kind="show" identifier="showLessonDetailSegue" id="QFi-4J-uEm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kr1-8h-z8J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1934,7 +2010,6 @@ offline</string>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="100%" width="186" height="162"/>
-        <image name="Screenshot 2024-04-26 at 11.26.43 AM" width="637" height="332"/>
         <image name="Thankyou sign" width="1356" height="925"/>
         <image name="Thumbs up" width="208" height="158"/>
         <image name="book.pages.fill" catalog="system" width="107" height="128"/>

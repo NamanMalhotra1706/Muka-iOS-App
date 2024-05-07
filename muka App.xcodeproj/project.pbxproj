@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F23CFBE2BDF602D00B1FEE7 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23CFBD2BDF602D00B1FEE7 /* AchievementViewController.swift */; };
-		3F23CFC22BDF63E000B1FEE7 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23CFC12BDF63E000B1FEE7 /* Achievement.swift */; };
 		3F23CFC62BDF660800B1FEE7 /* MedalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23CFC52BDF660800B1FEE7 /* MedalCell.swift */; };
 		3F23CFC82BDF668100B1FEE7 /* BadgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23CFC72BDF668100B1FEE7 /* BadgeCell.swift */; };
-		3F23CFCC2BDF810B00B1FEE7 /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23CFCB2BDF810B00B1FEE7 /* LessonsViewController.swift */; };
 		3F2A58EE2BE35ECC0030DB44 /* PlainCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A58ED2BE35ECC0030DB44 /* PlainCircularProgressBar.swift */; };
 		3F34E1002BE8AD6C0078D75B /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E0FF2BE8AD6C0078D75B /* CourseCell.swift */; };
 		3F35DC052BDA19A600FFF6B0 /* Assessments-Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DC042BDA19A600FFF6B0 /* Assessments-Quiz.swift */; };
@@ -22,7 +20,6 @@
 		3F6561A92BE20514003F1EEC /* CourseHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6561A82BE20514003F1EEC /* CourseHome.swift */; };
 		3F9657B72BE20F8300E64046 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9657B62BE20F8300E64046 /* ProgressViewController.swift */; };
 		3FA2A08A2BDA341F0048E16B /* Assessment-QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2A0892BDA341F0048E16B /* Assessment-QuizViewController.swift */; };
-		3FA4600B2BDF9C41007F78A6 /* LessonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA4600A2BDF9C41007F78A6 /* LessonCell.swift */; };
 		3FACFE052BDFA1BE00F240B7 /* CourseHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACFE042BDFA1BE00F240B7 /* CourseHomeViewController.swift */; };
 		3FACFE0E2BDFA63900F240B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FACFE0C2BDFA63900F240B7 /* Main.storyboard */; };
 		3FBCF1F32BE3D33E002A02E9 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCF1F22BE3D33E002A02E9 /* ChallengesViewController.swift */; };
@@ -40,14 +37,14 @@
 		3FDFDF782BCCD9540015CC53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFDF772BCCD9540015CC53 /* SceneDelegate.swift */; };
 		3FDFDF7F2BCCD9560015CC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDFDF7E2BCCD9560015CC53 /* Assets.xcassets */; };
 		3FDFDF822BCCD9560015CC53 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3FDFDF812BCCD9560015CC53 /* Base */; };
+		3FE6012B2BE9E73D0028E065 /* LessonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6012A2BE9E7380028E065 /* LessonCollectionViewCell.swift */; };
+		3FE6012D2BE9E78B0028E065 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6012C2BE9E78B0028E065 /* LessonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F23CFBD2BDF602D00B1FEE7 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
-		3F23CFC12BDF63E000B1FEE7 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		3F23CFC52BDF660800B1FEE7 /* MedalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedalCell.swift; sourceTree = "<group>"; };
 		3F23CFC72BDF668100B1FEE7 /* BadgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCell.swift; sourceTree = "<group>"; };
-		3F23CFCB2BDF810B00B1FEE7 /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewController.swift; sourceTree = "<group>"; };
 		3F2A58ED2BE35ECC0030DB44 /* PlainCircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainCircularProgressBar.swift; sourceTree = "<group>"; };
 		3F34E0FF2BE8AD6C0078D75B /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		3F35DC042BDA19A600FFF6B0 /* Assessments-Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assessments-Quiz.swift"; sourceTree = "<group>"; };
@@ -58,7 +55,6 @@
 		3F6561A82BE20514003F1EEC /* CourseHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHome.swift; sourceTree = "<group>"; };
 		3F9657B62BE20F8300E64046 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		3FA2A0892BDA341F0048E16B /* Assessment-QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assessment-QuizViewController.swift"; sourceTree = "<group>"; };
-		3FA4600A2BDF9C41007F78A6 /* LessonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonCell.swift; sourceTree = "<group>"; };
 		3FACFE042BDFA1BE00F240B7 /* CourseHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHomeViewController.swift; sourceTree = "<group>"; };
 		3FACFE0D2BDFA63900F240B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FBCF1F22BE3D33E002A02E9 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +74,8 @@
 		3FDFDF7E2BCCD9560015CC53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FDFDF812BCCD9560015CC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FDFDF832BCCD9560015CC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE6012A2BE9E7380028E065 /* LessonCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonCollectionViewCell.swift; sourceTree = "<group>"; };
+		3FE6012C2BE9E78B0028E065 /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +102,10 @@
 				3F23CFBD2BDF602D00B1FEE7 /* AchievementViewController.swift */,
 				3F23CFC52BDF660800B1FEE7 /* MedalCell.swift */,
 				3F23CFC72BDF668100B1FEE7 /* BadgeCell.swift */,
-				3F23CFCB2BDF810B00B1FEE7 /* LessonsViewController.swift */,
-				3FA4600A2BDF9C41007F78A6 /* LessonCell.swift */,
 				3FACFE042BDFA1BE00F240B7 /* CourseHomeViewController.swift */,
+				3FE6012A2BE9E7380028E065 /* LessonCollectionViewCell.swift */,
 				3F34E0FF2BE8AD6C0078D75B /* CourseCell.swift */,
+				3FE6012C2BE9E78B0028E065 /* LessonViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -131,7 +129,6 @@
 				3FC00F2D2BDB5FC1000A10F9 /* ChallengesQuiz.swift */,
 				3F44502C2BDBA1E400EB9BDE /* Profile.swift */,
 				3F44502E2BDBA21700EB9BDE /* UserProfileService.swift */,
-				3F23CFC12BDF63E000B1FEE7 /* Achievement.swift */,
 				3F6561A82BE20514003F1EEC /* CourseHome.swift */,
 				3FBCF1F42BE3D369002A02E9 /* Challenge.swift */,
 			);
@@ -253,22 +250,21 @@
 				3F56CDBD2BE8095500888486 /* OnBoardingViewController.swift in Sources */,
 				3FACFE052BDFA1BE00F240B7 /* CourseHomeViewController.swift in Sources */,
 				3F44502F2BDBA21700EB9BDE /* UserProfileService.swift in Sources */,
-				3F23CFC22BDF63E000B1FEE7 /* Achievement.swift in Sources */,
 				3F23CFC62BDF660800B1FEE7 /* MedalCell.swift in Sources */,
-				3FA4600B2BDF9C41007F78A6 /* LessonCell.swift in Sources */,
 				3F4450352BDBA28C00EB9BDE /* ProfileTableViewController.swift in Sources */,
 				3FBCF1F32BE3D33E002A02E9 /* ChallengesViewController.swift in Sources */,
 				3FC00F2E2BDB5FC1000A10F9 /* ChallengesQuiz.swift in Sources */,
 				3F6561A92BE20514003F1EEC /* CourseHome.swift in Sources */,
 				3FBCF1F72BE3D3EA002A02E9 /* CurrentWeekQuizCell.swift in Sources */,
+				3FE6012B2BE9E73D0028E065 /* LessonCollectionViewCell.swift in Sources */,
 				3FC369982BD8E7570095F11A /* GamificationTabViewController.swift in Sources */,
 				3FDFDF762BCCD9540015CC53 /* AppDelegate.swift in Sources */,
+				3FE6012D2BE9E78B0028E065 /* LessonViewController.swift in Sources */,
 				3FC369922BD8DE540095F11A /* Data Models.swift in Sources */,
 				3FBE98E32BDBA86A0099EC2F /* CoursesTableViewController.swift in Sources */,
 				3FBCF1F52BE3D369002A02E9 /* Challenge.swift in Sources */,
 				3F23CFC82BDF668100B1FEE7 /* BadgeCell.swift in Sources */,
 				3FC369942BD8E7160095F11A /* CoursesTabViewController.swift in Sources */,
-				3F23CFCC2BDF810B00B1FEE7 /* LessonsViewController.swift in Sources */,
 				3F34E1002BE8AD6C0078D75B /* CourseCell.swift in Sources */,
 				3FDFDF782BCCD9540015CC53 /* SceneDelegate.swift in Sources */,
 				3FC369962BD8E73C0095F11A /* PractiseTabViewController.swift in Sources */,
