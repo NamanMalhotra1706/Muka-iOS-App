@@ -14,6 +14,7 @@
 		3F48457B2BEA440800CABF5B /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F48457A2BEA440800CABF5B /* ProfileTableViewController.swift */; };
 		3F56CDBD2BE8095500888486 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56CDBC2BE8095500888486 /* OnBoardingViewController.swift */; };
 		3F6561A92BE20514003F1EEC /* CourseHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6561A82BE20514003F1EEC /* CourseHome.swift */; };
+		3F8E6DAD2BEA58E6004927F4 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E6DAC2BEA58E6004927F4 /* EditProfileTableViewController.swift */; };
 		3F9657B72BE20F8300E64046 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9657B62BE20F8300E64046 /* ProgressViewController.swift */; };
 		3FA2A08A2BDA341F0048E16B /* Assessment-QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2A0892BDA341F0048E16B /* Assessment-QuizViewController.swift */; };
 		3FACFE052BDFA1BE00F240B7 /* CourseHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACFE042BDFA1BE00F240B7 /* CourseHomeViewController.swift */; };
@@ -41,10 +42,11 @@
 		3F2A58ED2BE35ECC0030DB44 /* PlainCircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainCircularProgressBar.swift; sourceTree = "<group>"; };
 		3F34E0FF2BE8AD6C0078D75B /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		3F35DC042BDA19A600FFF6B0 /* Assessments-Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assessments-Quiz.swift"; sourceTree = "<group>"; };
-		3F4845782BEA43FD00CABF5B /* UserProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = SOURCE_ROOT; };
+		3F4845782BEA43FD00CABF5B /* UserProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfileModel.swift; path = "muka App/Models/UserProfileModel.swift"; sourceTree = SOURCE_ROOT; };
 		3F48457A2BEA440800CABF5B /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		3F56CDBC2BE8095500888486 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		3F6561A82BE20514003F1EEC /* CourseHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHome.swift; sourceTree = "<group>"; };
+		3F8E6DAC2BEA58E6004927F4 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		3F9657B62BE20F8300E64046 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		3FA2A0892BDA341F0048E16B /* Assessment-QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assessment-QuizViewController.swift"; sourceTree = "<group>"; };
 		3FACFE042BDFA1BE00F240B7 /* CourseHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHomeViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				3F35DC042BDA19A600FFF6B0 /* Assessments-Quiz.swift */,
 				3FC369952BD8E73C0095F11A /* PractiseTabViewController.swift */,
 				3FC00F2D2BDB5FC1000A10F9 /* ChallengesQuiz.swift */,
+				3F4845782BEA43FD00CABF5B /* UserProfileModel.swift */,
 				3F6561A82BE20514003F1EEC /* CourseHome.swift */,
 				3FBCF1F42BE3D369002A02E9 /* Challenge.swift */,
 			);
@@ -122,6 +125,7 @@
 		3FDFDF692BCCD9540015CC53 = {
 			isa = PBXGroup;
 			children = (
+				3F8E6DAC2BEA58E6004927F4 /* EditProfileTableViewController.swift */,
 				3F56CDBC2BE8095500888486 /* OnBoardingViewController.swift */,
 				3F2A58ED2BE35ECC0030DB44 /* PlainCircularProgressBar.swift */,
 				3F9657B62BE20F8300E64046 /* ProgressViewController.swift */,
@@ -149,7 +153,6 @@
 				3FACFE0C2BDFA63900F240B7 /* Main.storyboard */,
 				3FDFDF802BCCD9560015CC53 /* LaunchScreen.storyboard */,
 				3FB0CB492BEA381000DFADAB /* Accessibility.mp4 */,
-				3F4845782BEA43FD00CABF5B /* UserProfileModel.swift */,
 				3F48457A2BEA440800CABF5B /* ProfileTableViewController.swift */,
 			);
 			path = "muka App";
@@ -235,6 +238,7 @@
 				3FBCF1F92BE3D3FD002A02E9 /* QuizHistoryCell.swift in Sources */,
 				3F35DC052BDA19A600FFF6B0 /* Assessments-Quiz.swift in Sources */,
 				3F4845792BEA43FD00CABF5B /* UserProfileModel.swift in Sources */,
+				3F8E6DAD2BEA58E6004927F4 /* EditProfileTableViewController.swift in Sources */,
 				3F56CDBD2BE8095500888486 /* OnBoardingViewController.swift in Sources */,
 				3FACFE052BDFA1BE00F240B7 /* CourseHomeViewController.swift in Sources */,
 				3FD071512BEA282F002B9D93 /* AssessmentButtonCell.swift in Sources */,

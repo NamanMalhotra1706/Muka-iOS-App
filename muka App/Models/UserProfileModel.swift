@@ -14,6 +14,15 @@ struct UserProfile{
     var userName: String
     var userEmail : String
     var completedCourses:[CourseCompeletionByUser]
+    
+    static var archiveUrl :  URL {
+        let document = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let archiveURL = document.appendingPathComponent("UserInformation").appendingPathExtension("plist")
+        
+        return archiveURL
+    }
+    
+    
 }
 
 //struct UserMedals {
@@ -31,6 +40,12 @@ class User {
     
     var sampleUsers : [UserProfile] = []
     
+    private static var shared : User = User()
+    
+    static func getAllUser() -> User{
+        return shared
+    }
+    
     init(){
         
         sampleUsers.append(UserProfile(userId: 1, userAvatar: UIImage(named: "Bitmogi")! ,userName: "Naman Malhotra", userEmail: "naman0913.be21@chitkara.edu.in",
@@ -46,6 +61,16 @@ class User {
                                        ]))
     }
     
+    func updateUser(userId: Int, newUserName: String, newUserEmail: String) {
+        
+        print("Updating in progress...")
+            if let index = sampleUsers.firstIndex(where: { $0.userId == userId }) {
+                sampleUsers[index].userName = newUserName
+                sampleUsers[index].userEmail = newUserEmail
+            } else {
+                print("User not found for ID:", userId)
+            }
+        }
     
     func getUserInfo(userID: Int) -> UserProfile? {
             return sampleUsers.first { $0.userId == userID }
