@@ -7,32 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F23CFBE2BDF602D00B1FEE7 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23CFBD2BDF602D00B1FEE7 /* AchievementViewController.swift */; };
-		3F23CFC62BDF660800B1FEE7 /* MedalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23CFC52BDF660800B1FEE7 /* MedalCell.swift */; };
-		3F23CFC82BDF668100B1FEE7 /* BadgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23CFC72BDF668100B1FEE7 /* BadgeCell.swift */; };
 		3F2A58EE2BE35ECC0030DB44 /* PlainCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A58ED2BE35ECC0030DB44 /* PlainCircularProgressBar.swift */; };
 		3F34E1002BE8AD6C0078D75B /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F34E0FF2BE8AD6C0078D75B /* CourseCell.swift */; };
 		3F35DC052BDA19A600FFF6B0 /* Assessments-Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35DC042BDA19A600FFF6B0 /* Assessments-Quiz.swift */; };
-		3F44502D2BDBA1E400EB9BDE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44502C2BDBA1E400EB9BDE /* Profile.swift */; };
-		3F44502F2BDBA21700EB9BDE /* UserProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44502E2BDBA21700EB9BDE /* UserProfileService.swift */; };
-		3F4450352BDBA28C00EB9BDE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4450342BDBA28C00EB9BDE /* ProfileTableViewController.swift */; };
 		3F56CDBD2BE8095500888486 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56CDBC2BE8095500888486 /* OnBoardingViewController.swift */; };
 		3F6561A92BE20514003F1EEC /* CourseHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6561A82BE20514003F1EEC /* CourseHome.swift */; };
 		3F9657B72BE20F8300E64046 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9657B62BE20F8300E64046 /* ProgressViewController.swift */; };
 		3FA2A08A2BDA341F0048E16B /* Assessment-QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2A0892BDA341F0048E16B /* Assessment-QuizViewController.swift */; };
 		3FACFE052BDFA1BE00F240B7 /* CourseHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FACFE042BDFA1BE00F240B7 /* CourseHomeViewController.swift */; };
 		3FACFE0E2BDFA63900F240B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FACFE0C2BDFA63900F240B7 /* Main.storyboard */; };
+		3FB0CB4A2BEA381E00DFADAB /* Accessibility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FB0CB492BEA381000DFADAB /* Accessibility.mp4 */; };
 		3FBCF1F32BE3D33E002A02E9 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCF1F22BE3D33E002A02E9 /* ChallengesViewController.swift */; };
 		3FBCF1F52BE3D369002A02E9 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCF1F42BE3D369002A02E9 /* Challenge.swift */; };
 		3FBCF1F72BE3D3EA002A02E9 /* CurrentWeekQuizCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCF1F62BE3D3EA002A02E9 /* CurrentWeekQuizCell.swift */; };
 		3FBCF1F92BE3D3FD002A02E9 /* QuizHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCF1F82BE3D3FD002A02E9 /* QuizHistoryCell.swift */; };
-		3FBE98E32BDBA86A0099EC2F /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBE98E22BDBA86A0099EC2F /* CoursesTableViewController.swift */; };
 		3FC00F2C2BDB5FA9000A10F9 /* ChallengesQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC00F2B2BDB5FA9000A10F9 /* ChallengesQuizViewController.swift */; };
 		3FC00F2E2BDB5FC1000A10F9 /* ChallengesQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC00F2D2BDB5FC1000A10F9 /* ChallengesQuiz.swift */; };
 		3FC369922BD8DE540095F11A /* Data Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC369912BD8DE540095F11A /* Data Models.swift */; };
 		3FC369942BD8E7160095F11A /* CoursesTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC369932BD8E7160095F11A /* CoursesTabViewController.swift */; };
 		3FC369962BD8E73C0095F11A /* PractiseTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC369952BD8E73C0095F11A /* PractiseTabViewController.swift */; };
 		3FC369982BD8E7570095F11A /* GamificationTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC369972BD8E7570095F11A /* GamificationTabViewController.swift */; };
+		3FD071512BEA282F002B9D93 /* AssessmentButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD071502BEA282F002B9D93 /* AssessmentButtonCell.swift */; };
 		3FDFDF762BCCD9540015CC53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFDF752BCCD9540015CC53 /* AppDelegate.swift */; };
 		3FDFDF782BCCD9540015CC53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFDF772BCCD9540015CC53 /* SceneDelegate.swift */; };
 		3FDFDF7F2BCCD9560015CC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDFDF7E2BCCD9560015CC53 /* Assets.xcassets */; };
@@ -42,32 +37,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F23CFBD2BDF602D00B1FEE7 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
-		3F23CFC52BDF660800B1FEE7 /* MedalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedalCell.swift; sourceTree = "<group>"; };
-		3F23CFC72BDF668100B1FEE7 /* BadgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCell.swift; sourceTree = "<group>"; };
 		3F2A58ED2BE35ECC0030DB44 /* PlainCircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainCircularProgressBar.swift; sourceTree = "<group>"; };
 		3F34E0FF2BE8AD6C0078D75B /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		3F35DC042BDA19A600FFF6B0 /* Assessments-Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assessments-Quiz.swift"; sourceTree = "<group>"; };
-		3F44502C2BDBA1E400EB9BDE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		3F44502E2BDBA21700EB9BDE /* UserProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileService.swift; sourceTree = "<group>"; };
-		3F4450342BDBA28C00EB9BDE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		3F56CDBC2BE8095500888486 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		3F6561A82BE20514003F1EEC /* CourseHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHome.swift; sourceTree = "<group>"; };
 		3F9657B62BE20F8300E64046 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		3FA2A0892BDA341F0048E16B /* Assessment-QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assessment-QuizViewController.swift"; sourceTree = "<group>"; };
 		3FACFE042BDFA1BE00F240B7 /* CourseHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHomeViewController.swift; sourceTree = "<group>"; };
 		3FACFE0D2BDFA63900F240B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FB0CB492BEA381000DFADAB /* Accessibility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Accessibility.mp4; sourceTree = "<group>"; };
 		3FBCF1F22BE3D33E002A02E9 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		3FBCF1F42BE3D369002A02E9 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		3FBCF1F62BE3D3EA002A02E9 /* CurrentWeekQuizCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeekQuizCell.swift; sourceTree = "<group>"; };
 		3FBCF1F82BE3D3FD002A02E9 /* QuizHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHistoryCell.swift; sourceTree = "<group>"; };
-		3FBE98E22BDBA86A0099EC2F /* CoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
 		3FC00F2B2BDB5FA9000A10F9 /* ChallengesQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesQuizViewController.swift; sourceTree = "<group>"; };
 		3FC00F2D2BDB5FC1000A10F9 /* ChallengesQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesQuiz.swift; sourceTree = "<group>"; };
 		3FC369912BD8DE540095F11A /* Data Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Models.swift"; sourceTree = "<group>"; };
 		3FC369932BD8E7160095F11A /* CoursesTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTabViewController.swift; sourceTree = "<group>"; };
 		3FC369952BD8E73C0095F11A /* PractiseTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PractiseTabViewController.swift; sourceTree = "<group>"; };
 		3FC369972BD8E7570095F11A /* GamificationTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamificationTabViewController.swift; sourceTree = "<group>"; };
+		3FD071502BEA282F002B9D93 /* AssessmentButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentButtonCell.swift; sourceTree = "<group>"; };
 		3FDFDF722BCCD9540015CC53 /* muka App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "muka App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDFDF752BCCD9540015CC53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FDFDF772BCCD9540015CC53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,15 +87,11 @@
 				3FC369932BD8E7160095F11A /* CoursesTabViewController.swift */,
 				3FC369972BD8E7570095F11A /* GamificationTabViewController.swift */,
 				3FC00F2B2BDB5FA9000A10F9 /* ChallengesQuizViewController.swift */,
-				3F4450342BDBA28C00EB9BDE /* ProfileTableViewController.swift */,
-				3FBE98E22BDBA86A0099EC2F /* CoursesTableViewController.swift */,
-				3F23CFBD2BDF602D00B1FEE7 /* AchievementViewController.swift */,
-				3F23CFC52BDF660800B1FEE7 /* MedalCell.swift */,
-				3F23CFC72BDF668100B1FEE7 /* BadgeCell.swift */,
 				3FACFE042BDFA1BE00F240B7 /* CourseHomeViewController.swift */,
 				3FE6012A2BE9E7380028E065 /* LessonCollectionViewCell.swift */,
 				3F34E0FF2BE8AD6C0078D75B /* CourseCell.swift */,
 				3FE6012C2BE9E78B0028E065 /* LessonViewController.swift */,
+				3FD071502BEA282F002B9D93 /* AssessmentButtonCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,8 +113,6 @@
 				3F35DC042BDA19A600FFF6B0 /* Assessments-Quiz.swift */,
 				3FC369952BD8E73C0095F11A /* PractiseTabViewController.swift */,
 				3FC00F2D2BDB5FC1000A10F9 /* ChallengesQuiz.swift */,
-				3F44502C2BDBA1E400EB9BDE /* Profile.swift */,
-				3F44502E2BDBA21700EB9BDE /* UserProfileService.swift */,
 				3F6561A82BE20514003F1EEC /* CourseHome.swift */,
 				3FBCF1F42BE3D369002A02E9 /* Challenge.swift */,
 			);
@@ -165,6 +149,7 @@
 				3FACFE0C2BDFA63900F240B7 /* Main.storyboard */,
 				3FDFDF802BCCD9560015CC53 /* LaunchScreen.storyboard */,
 				3FDFDF832BCCD9560015CC53 /* Info.plist */,
+				3FB0CB492BEA381000DFADAB /* Accessibility.mp4 */,
 			);
 			path = "muka App";
 			sourceTree = "<group>";
@@ -227,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FB0CB4A2BEA381E00DFADAB /* Accessibility.mp4 in Resources */,
 				3FACFE0E2BDFA63900F240B7 /* Main.storyboard in Resources */,
 				3FDFDF7F2BCCD9560015CC53 /* Assets.xcassets in Resources */,
 				3FDFDF822BCCD9560015CC53 /* Base in Resources */,
@@ -241,7 +227,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA2A08A2BDA341F0048E16B /* Assessment-QuizViewController.swift in Sources */,
-				3F44502D2BDBA1E400EB9BDE /* Profile.swift in Sources */,
 				3FC00F2C2BDB5FA9000A10F9 /* ChallengesQuizViewController.swift in Sources */,
 				3F9657B72BE20F8300E64046 /* ProgressViewController.swift in Sources */,
 				3F2A58EE2BE35ECC0030DB44 /* PlainCircularProgressBar.swift in Sources */,
@@ -249,9 +234,7 @@
 				3F35DC052BDA19A600FFF6B0 /* Assessments-Quiz.swift in Sources */,
 				3F56CDBD2BE8095500888486 /* OnBoardingViewController.swift in Sources */,
 				3FACFE052BDFA1BE00F240B7 /* CourseHomeViewController.swift in Sources */,
-				3F44502F2BDBA21700EB9BDE /* UserProfileService.swift in Sources */,
-				3F23CFC62BDF660800B1FEE7 /* MedalCell.swift in Sources */,
-				3F4450352BDBA28C00EB9BDE /* ProfileTableViewController.swift in Sources */,
+				3FD071512BEA282F002B9D93 /* AssessmentButtonCell.swift in Sources */,
 				3FBCF1F32BE3D33E002A02E9 /* ChallengesViewController.swift in Sources */,
 				3FC00F2E2BDB5FC1000A10F9 /* ChallengesQuiz.swift in Sources */,
 				3F6561A92BE20514003F1EEC /* CourseHome.swift in Sources */,
@@ -261,14 +244,11 @@
 				3FDFDF762BCCD9540015CC53 /* AppDelegate.swift in Sources */,
 				3FE6012D2BE9E78B0028E065 /* LessonViewController.swift in Sources */,
 				3FC369922BD8DE540095F11A /* Data Models.swift in Sources */,
-				3FBE98E32BDBA86A0099EC2F /* CoursesTableViewController.swift in Sources */,
 				3FBCF1F52BE3D369002A02E9 /* Challenge.swift in Sources */,
-				3F23CFC82BDF668100B1FEE7 /* BadgeCell.swift in Sources */,
 				3FC369942BD8E7160095F11A /* CoursesTabViewController.swift in Sources */,
 				3F34E1002BE8AD6C0078D75B /* CourseCell.swift in Sources */,
 				3FDFDF782BCCD9540015CC53 /* SceneDelegate.swift in Sources */,
 				3FC369962BD8E73C0095F11A /* PractiseTabViewController.swift in Sources */,
-				3F23CFBE2BDF602D00B1FEE7 /* AchievementViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
