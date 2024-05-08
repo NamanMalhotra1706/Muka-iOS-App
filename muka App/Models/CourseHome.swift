@@ -19,7 +19,6 @@ struct CoursesLesson {
     let lessonId: Int
     let lessonTitle: String
     let lessonDuration: Int // Duration of the lesson in minutes
-    
 }
 
 struct CourseHome {
@@ -125,4 +124,5 @@ class CourseDataModel {
     
     
     }
+
 

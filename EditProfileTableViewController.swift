@@ -22,44 +22,22 @@ class EditProfileTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        displayCurrentUserDetail();
+    }
+    
+    func displayCurrentUserDetail(){
         guard let userId = receivedData else {
                     print("No user ID received.")
                     return
                 }
-
-                guard let userProfile = User.getAllUser().sampleUsers.first(where: { $0.userId == userId }) else {
+        guard let userProfile = user.sampleUsers.first(where: { $0.userId == userId }) else {
                     print("User profile not found for ID:", userId)
                     return
                 }
-
-                // Update UI with user profile data
-                nameTextField.text = userProfile.userName
-                emailTextField.text = userProfile.userEmail
+        nameTextField.text = userProfile.userName
+        emailTextField.text = userProfile.userEmail
     }
     
-    @IBAction func saveChanges(_ sender: UIBarButtonItem) {
-
-        print("Saving the data")
-        
-        if let userId = receivedData {
-            
-            User.getAllUser().updateUser(userId: userId, newUserName: nameTextField.text ?? "", newUserEmail: emailTextField.text ?? "")
-
-                profileUpdated = true
-
-                } else {
-                    print("No user ID received.")
-                }
-                
-        //print("User new Name: \(nameTextField.text)")
-       //print("User new Name: \(emailTextField.text)")
-        
-        profileUpdated = true
-        
-        // performSegue(withIdentifier: "saveProfile", sender: self)
-
-        }
 
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -71,6 +49,16 @@ class EditProfileTableViewController: UITableViewController {
         return 1
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "saveButtonClicked" {
+            if let profileTVC = segue.destination as? ProfileTableViewController {
+                // Pass data to the destination view controller
+                //destinationVC.receivedData = currentUserId
+                user.updateUserInfo(userID: receivedData ?? 1, newUserName: nameTextField.text ?? "", newUserEmail: emailTextField.text ?? "")
+                profileTVC.viewWillAppear(true)
+            }
+        }
+    }
     
     
 }

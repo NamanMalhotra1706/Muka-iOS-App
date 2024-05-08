@@ -39,7 +39,7 @@ class CourseHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "CourseCell", for: indexPath) as! CourseCell
         
         let course = courses[indexPath.row]
-        cell.configure(with: course)
+        //cell.configure(with: course)
         
         cell.courseIconImageView.image = UIImage(named: "common_course_icon")
                 cell.courseNameLabel.text = course.courseName
@@ -78,8 +78,6 @@ class CourseHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
     
-    // MARK: - UITableViewDelegate
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedCourse = courses[indexPath.row]
        
@@ -89,9 +87,7 @@ class CourseHomeViewController: UIViewController, UITableViewDelegate, UITableVi
                             print("Tapped a row without disclosure indicator")
                         }
     }
-    
-    // MARK: - Navigation
-    
+        
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showLessonDetailSegue" {

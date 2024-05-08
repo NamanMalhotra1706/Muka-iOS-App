@@ -17,12 +17,15 @@ class ProfileTableViewController: UITableViewController {
     @IBOutlet weak var profileEmail: UILabel!
     
     let currentUserId = 1
-    let user = User()
     
+    //var userProfile: UserProfile?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        displayUserProfile()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         displayUserProfile()
     }
     
@@ -44,10 +47,10 @@ class ProfileTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "userIdToEdit" {
             if let navigationController = segue.destination as? UINavigationController,
-                       let destinationVC = navigationController.topViewController as? EditProfileTableViewController {
-                        // Pass data to the destination view controller
-                        destinationVC.receivedData = currentUserId
-                    }
+               let destinationVC = navigationController.topViewController as? EditProfileTableViewController {
+                // Pass data to the destination view controller
+                destinationVC.receivedData = currentUserId
+            }
         }
     }
     
@@ -55,14 +58,6 @@ class ProfileTableViewController: UITableViewController {
         
     }
     
-    @IBAction func unwindToProfile(segue: UIStoryboardSegue) {
-        if let sourceVC = segue.source as? EditProfileTableViewController {
-            if sourceVC.profileUpdated {
-             print("UI updated")
-                viewDidLoad()
-            }
-        }
-    }
-
+    
 }
 
