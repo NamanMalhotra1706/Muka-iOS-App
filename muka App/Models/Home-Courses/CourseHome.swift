@@ -122,7 +122,20 @@ class CourseDataModel {
         return sampleCourses[idx].lessons
     }
     
+    func getTotalNumberOfCourses() -> Int {
+        return sampleCourses.count
+    }
+    
+    func getTotalNumberOfLessons() -> Int {
+        var totalLessons = 0
+        for course in sampleCourses {
+            totalLessons += course.lessons.count
+        }
+        return totalLessons
+    }
+    
     
 }
 
+var coursesData = CourseDataModel()
 

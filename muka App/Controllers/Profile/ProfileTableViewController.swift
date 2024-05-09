@@ -27,6 +27,7 @@ class ProfileTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         displayUserProfile()
+        
     }
     
     func displayUserProfile(){

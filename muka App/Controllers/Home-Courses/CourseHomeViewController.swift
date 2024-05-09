@@ -2,18 +2,40 @@ import UIKit
 
 class CourseHomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var userCurrentWorkingCourseName: UILabel!
+    @IBOutlet weak var userProgressPercentage: UILabel!
+    @IBOutlet weak var userProgress: UIProgressView!
     @IBOutlet weak var tableView: UITableView!
+    
+    var currentUser = 1
     
     var courses: [CourseHome] = CourseDataModel().getAllCourses()
     var selectedCourse: CourseHome?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
+        displayData()
     }
     
+    func displayData(){
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        let currentCourseEnrolled = user.sampleUsers[currentUser].currentCourse
+        
+        userCurrentWorkingCourseName.text = currentCourseEnrolled.title
+        
+        // Calculate user's progress
+        let totalVideos = currentCourseEnrolled.totalVideos
+        let completedVideos = currentCourseEnrolled.userCompletedVideos
+        
+        let progressPercentage = Float(completedVideos) / Float(totalVideos)
+        userProgressPercentage.text = "\(Int(progressPercentage * 100))%"
+        
+        // Update progress bar
+        userProgress.progress = progressPercentage
+        
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         

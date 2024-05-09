@@ -1,20 +1,3 @@
-//import UIKit
-//
-//struct Challenge {
-//    let title: String
-//    let description: String
-//    let marksObtained: Int
-//}
-//
-
-//import UIKit
-//
-//struct ChallengeQuiz {
-//    let title: String
-//    let image: UIImage
-//    let description: String
-//}
-
 import UIKit
 
 struct Challenge {
@@ -23,17 +6,19 @@ struct Challenge {
     let difficulty: String
     var progress: Int // Marks obtained by the user
     let totalMarks: Int // Total marks possible for the challenge
+    let scoredMarks:Int
     let rewards: String
     let image: UIImage
 }
 
 struct LevelAChallenges {
-    static let basicChallenges: [Challenge] = [
+    let basicChallenges: [Challenge] = [
         Challenge(title: "Basic ISL Alphabet Quiz",
                   description: "Test your knowledge of the basic ISL alphabet letters.",
                   difficulty: "Easy",
                   progress: 0,
                   totalMarks: 10,
+                  scoredMarks: 8,
                   rewards: "Earn a 'Letter Learner' badge upon completing the quiz with a high score.",
                   image: UIImage(named: "Quiz_Alphabet")!),
         
@@ -43,6 +28,7 @@ struct LevelAChallenges {
                   difficulty: "Medium",
                   progress: 0,
                   totalMarks: 20,
+                  scoredMarks: 18,
                   rewards: "Unlock the 'Social Connector' badge for demonstrating proficiency in greetings.",
                   image: UIImage(named: "Quiz_Greeting")!),
         
@@ -51,6 +37,7 @@ struct LevelAChallenges {
                   difficulty: "Medium",
                   progress: 0,
                   totalMarks: 15,
+                  scoredMarks: 10,
                   rewards: "Achieve the 'Math Whiz' badge by correctly answering all counting questions.",
                   image: UIImage(named: "Quiz_Numbers")!),
         
@@ -59,6 +46,7 @@ struct LevelAChallenges {
                   difficulty: "Easy to Medium",
                   progress: 0,
                   totalMarks: 10,
+                  scoredMarks: 10,
                   rewards: "Earn the 'Object Identifier' badge for correctly identifying a set of common signs.",
                   image: UIImage(named: "Quiz_CommonObject")!),
         
@@ -67,18 +55,22 @@ struct LevelAChallenges {
                   difficulty: "Medium to Hard",
                   progress: 0,
                   totalMarks: 30,
+                  scoredMarks: 26,
                   rewards: "Obtain the 'Grammar Guru' badge by achieving a high score on the grammar test.",
                   image: UIImage(named: "Quiz_Grammar")!)
     ]
 }
 
+var levelAChallenge = LevelAChallenges()
+
 struct LevelBChallenges {
-    static let intermediateChallenges: [Challenge] = [
+    let intermediateChallenges: [Challenge] = [
         Challenge(title: "Family Members and Relationships Test",
                   description: "Assess your knowledge of ISL signs for family members and relationships.",
                   difficulty: "Easy",
                   progress: 0,
                   totalMarks: 20,
+                  scoredMarks: 18,
                   rewards: "Family Expert",
                   image: UIImage(named: "Quiz_Family")!),
         
@@ -86,7 +78,8 @@ struct LevelBChallenges {
                   description: "Practice describing various types of relationships in ISL.",
                   difficulty: "Medium",
                   progress: 0,
-                  totalMarks: 15,
+                  totalMarks: 10,
+                  scoredMarks: 9,
                   rewards: "Relationship Master",
                   image: UIImage(named: "Quiz_Describerelations")!),
         
@@ -95,6 +88,7 @@ struct LevelBChallenges {
                   difficulty: "Medium",
                   progress: 0,
                   totalMarks: 10,
+                  scoredMarks: 9,
                   rewards: "Family Traditions",
                   image: UIImage(named: "Quiz_FamilyTradition")!),
         
@@ -103,6 +97,7 @@ struct LevelBChallenges {
                   difficulty: "Medium",
                   progress: 0,
                   totalMarks: 25,
+                  scoredMarks: 24,
                   rewards: "Emotion Explorer",
                   image: UIImage(named: "Quiz_Emotions")!),
         
@@ -111,18 +106,22 @@ struct LevelBChallenges {
                   difficulty: "Hard",
                   progress: 0,
                   totalMarks: 30,
+                  scoredMarks: 28,
                   rewards: "Conflict Resolver",
                   image: UIImage(named: "Quiz_Conflict")!)
     ]
 }
 
+var levelBChallenge = LevelBChallenges()
+
 struct LevelCChallenges {
-    static let advancedChallenges: [Challenge] = [
+    let advancedChallenges: [Challenge] = [
         Challenge(title: "Primary Colors in ISL Quiz",
                   description: "Test your knowledge of primary colors in ISL.",
                   difficulty: "Medium",
                   progress: 0,
-                  totalMarks: 15,
+                  totalMarks: 30,
+                  scoredMarks: 26,
                   rewards: "Unlock the 'Color Connoisseur' badge for correctly identifying primary colors.",
                   image: UIImage(named: "Quiz_Colors")!),
         
@@ -131,6 +130,7 @@ struct LevelCChallenges {
                   difficulty: "Medium to Hard",
                   progress: 0,
                   totalMarks: 20,
+                  scoredMarks: 20,
                   rewards: "Obtain the 'Shape Specialist' badge by correctly identifying various shapes.",
                   image: UIImage(named: "Quiz_Shapes")!),
         
@@ -139,6 +139,7 @@ struct LevelCChallenges {
                   difficulty: "Hard",
                   progress: 0,
                   totalMarks: 30,
+                  scoredMarks: 26,
                   rewards: "Earn the 'Visual Descriptor' badge by accurately describing objects based on color and shape.",
                   image: UIImage(named: "Quiz_Objects")!),
         
@@ -147,6 +148,7 @@ struct LevelCChallenges {
                   difficulty: "Medium",
                   progress: 0,
                   totalMarks: 20,
+                  scoredMarks: 19,
                   rewards: "Unlock the 'Pattern Pro' badge for correctly identifying patterns and designs.",
                   image: UIImage(named: "Quiz_Patterns")!),
         
@@ -155,7 +157,10 @@ struct LevelCChallenges {
                   difficulty: "Hard",
                   progress: 0,
                   totalMarks: 25,
+                  scoredMarks: 20,
                   rewards: "Obtain the 'Creative Genius' badge by demonstrating proficiency in art-related signs.",
                   image: UIImage(named: "Quiz_Art&Creativity")!)
     ]
 }
+
+var levelCChallenge = LevelCChallenges()

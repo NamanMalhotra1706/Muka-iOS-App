@@ -10,7 +10,7 @@ class ChallengesViewController: UIViewController, UITableViewDataSource, UITable
         super.viewDidLoad()
         tableView.register(challengesQuizTableViewCell.self, forCellReuseIdentifier: "QuizTableViewCell")
         
-        challenges = LevelBChallenges.intermediateChallenges
+        challenges = levelBChallenge.intermediateChallenges
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -50,6 +50,22 @@ class ChallengesViewController: UIViewController, UITableViewDataSource, UITable
         let selectedChallenge = challenges[indexPath.row]
         
         performSegue(withIdentifier: "takeAChallenge", sender: selectedChallenge)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "takeAChallenge",
+           let takeChallenegVC = segue.destination as? TakeChallenegeViewController,
+           let indexPath = tableView.indexPathForSelectedRow {
+            
+            // Assuming you have an array of challenges in your data source
+            let selectedChallenge = challenges[indexPath.row]
+            takeChallenegVC.recievedChallenegeName = selectedChallenge.title
+            
+            takeChallenegVC.recievedChallenegeDescription = selectedChallenge.description
+            
+            takeChallenegVC.recievedChallengeImage = selectedChallenge.image
+        }
+        
     }
     
 }

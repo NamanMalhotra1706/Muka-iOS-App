@@ -146,6 +146,7 @@ class AssessmentQuizViewController: UIViewController {
             Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(changeQuestion), userInfo: nil, repeats: false)
         }
     }
+    
 }
 
 

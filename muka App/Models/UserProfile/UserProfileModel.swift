@@ -14,15 +14,16 @@ struct UserProfile{
     var userName: String
     var userEmail : String
     var completedCourses:[CourseCompeletionByUser]
+    var challengesCompleted:[Challenge]
+    var currentCourse : CurrentCourseEnrolled
     
-    static var archiveUrl :  URL {
-        let document = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        let archiveURL = document.appendingPathComponent("UserInformation").appendingPathExtension("plist")
-        
-        return archiveURL
-    }
-    
-    
+}
+
+struct CurrentCourseEnrolled{
+    let title: String
+    let totalVideos: Int
+    let userCompletedVideos: Int
+    let isAssessmnetTaken: Bool
 }
 
 struct UserMedals {
@@ -51,9 +52,13 @@ class User {
                                         CourseCompeletionByUser(courseId: 2, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
                                                                 medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
                                         
-                                        CourseCompeletionByUser(courseId: 2, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
+                                        CourseCompeletionByUser(courseId: 3, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
                                                                 medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal"))
-                                       ]))
+                                       ],
+                                       challengesCompleted:[levelAChallenge.basicChallenges[0], levelBChallenge.intermediateChallenges[3],
+                                                            levelCChallenge.advancedChallenges[2]],
+                                       
+                                       currentCourse: CurrentCourseEnrolled(title: "\(coursesData.sampleCourses[4].courseName)", totalVideos:coursesData.sampleCourses[4].lessons.count , userCompletedVideos: coursesData.sampleCourses[4].lessons.count-1, isAssessmnetTaken: false)))
         
         sampleUsers.append(UserProfile(userId: 2, userAvatar: UIImage(named: "Bitmogi")! ,userName: "Mansvi Grover", userEmail: "mansvi0859.be21@chitkara.edu.in",
                                        completedCourses: [
@@ -63,9 +68,14 @@ class User {
                                         CourseCompeletionByUser(courseId: 2, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
                                                                 medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
                                         
-                                        CourseCompeletionByUser(courseId: 2, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
+                                        CourseCompeletionByUser(courseId: 3, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
                                                                 medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal"))
-                                       ]))
+                                       ],
+                                       
+                                       challengesCompleted:[levelAChallenge.basicChallenges[4], levelBChallenge.intermediateChallenges[1],
+                                                            levelCChallenge.advancedChallenges[3]],
+                                       
+                                       currentCourse: CurrentCourseEnrolled(title: "\(coursesData.sampleCourses[2].courseName)", totalVideos:coursesData.sampleCourses[2].lessons.count , userCompletedVideos: coursesData.sampleCourses[2].lessons.count-1, isAssessmnetTaken: true)))
     }
     
     func updateUser(userId: Int, newUserName: String, newUserEmail: String) {
@@ -88,6 +98,14 @@ class User {
         return sampleUsers.first { $0.userId == userID }?.completedCourses
     }
     
+    // Function to get completed courses by User
+    func getTotalCompletedCourses(userID: Int) -> Int {
+        if let user = sampleUsers.first(where: { $0.userId == userID }) {
+            return user.completedCourses.count
+        }
+        return 0
+    }
+    
     // Function to get badges earned for a specific course by user ID
     func getBadgeEarnedByUserInCourse(userID: Int, courseId: Int) -> UserBadges? {
         if let user = sampleUsers.first(where: { $0.userId == userID }) {
@@ -106,6 +124,21 @@ class User {
             print("User not found with ID:", userID)
         }
     }
+    
+    func getChallengesCompletedByUser(userID: Int) -> [Challenge]? {
+        if let user = sampleUsers.first(where: { $0.userId == userID }) {
+            var allChallengesCompleted: [Challenge] = []
+            
+            for challenge in user.challengesCompleted {
+                allChallengesCompleted.append(challenge)
+            }
+            
+            return allChallengesCompleted
+        }
+        return nil
+    }
+    
+    
     
 }
 

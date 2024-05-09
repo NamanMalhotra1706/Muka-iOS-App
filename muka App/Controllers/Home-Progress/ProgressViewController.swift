@@ -5,6 +5,7 @@ class ProgressViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let currentUser = 1;
         
         // Create a newView
         let newView = UIView(frame: CGRect(x: 0, y: 500, width: self.view.frame.width, height: self.view.frame.width))
@@ -20,7 +21,7 @@ class ProgressViewController: UIViewController {
         
         // Create label for completion status
         let completedLabel = UILabel(frame: CGRect(x: 40, y: 160, width: newView.frame.width - 40, height: 50))
-        completedLabel.text = "39 out of 52 completed"
+        completedLabel.text = "\(user.getTotalCompletedCourses(userID: currentUser)) out of \(coursesData.getTotalNumberOfCourses()) completed"
         completedLabel.textColor = .black
         completedLabel.textAlignment = .left
         completedLabel.font = UIFont.boldSystemFont(ofSize: 10)
@@ -49,6 +50,8 @@ class ProgressViewController: UIViewController {
         // Set presentation style to full screen
         modalPresentationStyle = .fullScreen
     }
+    
+    
     
     @objc func closeButtonTapped() {
         // Dismiss the presented view controller
