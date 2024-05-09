@@ -40,16 +40,17 @@ class ChallengesViewController: UIViewController, UITableViewDataSource, UITable
             imageView.contentMode = .scaleAspectFit
             imageView.frame = cell.quizIcon.bounds
             cell.quizIcon.addSubview(imageView)
-        
-        return cell
-    }
-    
-    // MARK: - Table View Delegate
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let selectedChallenge = challenges[indexPath.row]
-//        showChallengeDetails(challenge: selectedChallenge)
-    }
+        cell.accessoryType = .disclosureIndicator // Add disclosure indicator
+                
+                return cell
+            }
+            
+            // MARK: - Table View Delegate
+            
+            func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+                let selectedChallenge = challenges[indexPath.row]
+                showChallengeDetails(challenge: selectedChallenge)
+            }
     
     // MARK: - Navigation
     
