@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SafariServices
 class ProfileTableViewController: UITableViewController {
     
     
@@ -65,9 +65,28 @@ class ProfileTableViewController: UITableViewController {
     }
     
     // Function to handle tap on achievement cell
-        func handleAchievementCellTap(forUser user: UserProfile) {
-            performSegue(withIdentifier: "ShowAchievement", sender: user)
+    func handleAchievementCellTap(forUser user: UserProfile) {
+        performSegue(withIdentifier: "ShowAchievement", sender: user)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 && indexPath.row == 3 {
+            if let url = URL(string: "https://www.freeprivacypolicy.com/live/d6fcbb63-2e69-4d0e-8964-5441f4033995"){
+                let privacyPolicyURL = SFSafariViewController(url:url)
+                present(privacyPolicyURL,animated: true,completion: nil)
+            }
         }
+        
+        if indexPath.section == 1 && indexPath.row == 2 {
+            if let url = URL(string: "https://www.surveymonkey.com/r/L32F5QP"){
+                let feedbackFormURL = SFSafariViewController(url:url)
+                present(feedbackFormURL,animated: true,completion: nil)
+            }
+        }
+        
+        
+        
+    }
     
     
 }

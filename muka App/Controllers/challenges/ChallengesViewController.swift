@@ -10,9 +10,6 @@ class ChallengesViewController: UIViewController, UITableViewDataSource, UITable
         super.viewDidLoad()
         tableView.register(challengesQuizTableViewCell.self, forCellReuseIdentifier: "QuizTableViewCell")
         
-        
-        // Populate challenges based on selected level
-        // For example, for Level B challenges:
         challenges = LevelBChallenges.intermediateChallenges
         
         tableView.dataSource = self
@@ -29,33 +26,31 @@ class ChallengesViewController: UIViewController, UITableViewDataSource, UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: "quizTableViewCell", for: indexPath) as! challengesQuizTableViewCell
         
         let challenge = challenges[indexPath.row]
-
+        
         cell.quizTitle.text = challenge.title
         cell.quizDescription.text = challenge.description
         cell.difficulty.text = "\(challenge.difficulty)"
         cell.earnReward.text = "\(challenge.rewards)"
         cell.quizScore.text = "\(challenge.progress)/\(challenge.totalMarks)"
         
-            let imageView = UIImageView(image: challenge.image)
-            imageView.contentMode = .scaleAspectFit
-            imageView.frame = cell.quizIcon.bounds
-            cell.quizIcon.addSubview(imageView)
-        cell.accessoryType = .disclosureIndicator // Add disclosure indicator
-                
-                return cell
-            }
-            
-            // MARK: - Table View Delegate
-            
-            func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                let selectedChallenge = challenges[indexPath.row]
-                showChallengeDetails(challenge: selectedChallenge)
-            }
-    
-    // MARK: - Navigation
-    
-    func showChallengeDetails(challenge: Challenge) {
-        // You can implement this method to navigate to a detailed view of the selected challenge if needed
+        let imageView = UIImageView(image: challenge.image)
+        imageView.contentMode = .scaleAspectFit
+        imageView.frame = cell.quizIcon.bounds
+        cell.quizIcon.addSubview(imageView)
+        cell.accessoryType = .disclosureIndicator
+        cell.selectionStyle = .none
+        
+        
+        return cell
     }
+    
+    // MARK: - Table View Delegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedChallenge = challenges[indexPath.row]
+        
+        performSegue(withIdentifier: "takeAChallenge", sender: selectedChallenge)
+    }
+    
 }
 

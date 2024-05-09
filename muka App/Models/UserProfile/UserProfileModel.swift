@@ -38,27 +38,33 @@ struct UserBadges {
 
 class User {
     
-  var sampleUsers : [UserProfile] = []
-
+    var sampleUsers : [UserProfile] = []
+    
     
     init(){
         
         sampleUsers.append(UserProfile(userId: 1, userAvatar: UIImage(named: "Bitmogi")! ,userName: "Naman Malhotra", userEmail: "naman0913.be21@chitkara.edu.in",
                                        completedCourses: [
                                         CourseCompeletionByUser(courseId: 1, courseName: "Intro to ISL", badgesEarned:UserBadges(imageName:UIImage(named: "silverCompletionBadge")!, title: "Silver Badge"),
-                                            medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
+                                                                medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
                                         
                                         CourseCompeletionByUser(courseId: 2, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
-                                            medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal"))
+                                                                medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
+                                        
+                                        CourseCompeletionByUser(courseId: 2, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
+                                                                medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal"))
                                        ]))
         
         sampleUsers.append(UserProfile(userId: 2, userAvatar: UIImage(named: "Bitmogi")! ,userName: "Mansvi Grover", userEmail: "mansvi0859.be21@chitkara.edu.in",
                                        completedCourses: [
                                         CourseCompeletionByUser(courseId: 1, courseName: "Intro to ISL", badgesEarned:UserBadges(imageName:UIImage(named: "silverCompletionBadge")!, title: "Silver Badge"),
-                                            medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
+                                                                medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
                                         
                                         CourseCompeletionByUser(courseId: 2, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
-                                            medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal"))
+                                                                medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
+                                        
+                                        CourseCompeletionByUser(courseId: 2, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
+                                                                medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal"))
                                        ]))
     }
     
@@ -93,13 +99,13 @@ class User {
     }
     
     func updateUserInfo(userID: Int, newUserName: String, newUserEmail: String) {
-            if let userIndex = sampleUsers.firstIndex(where: { $0.userId == userID }) {
-                sampleUsers[userIndex].userName = newUserName
-                sampleUsers[userIndex].userEmail = newUserEmail
-            } else {
-                print("User not found with ID:", userID)
-            }
+        if let userIndex = sampleUsers.firstIndex(where: { $0.userId == userID }) {
+            sampleUsers[userIndex].userName = newUserName
+            sampleUsers[userIndex].userEmail = newUserEmail
+        } else {
+            print("User not found with ID:", userID)
         }
+    }
     
 }
 

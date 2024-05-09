@@ -36,38 +36,38 @@ class LessonViewController: UIViewController {
 extension LessonViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-            return 2 // Two sections: one for lessons, one for assessment button
-        }
+        return 2 // Two sections: one for lessons, one for assessment button
+    }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            if section == 0 {
-                return selectedCourse?.lessons.count ?? 0
-            } else {
-                return 1 // Only one item for the assessment button
-            }
+        if section == 0 {
+            return selectedCourse?.lessons.count ?? 0
+        } else {
+            return 1 // Only one item for the assessment button
         }
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            if indexPath.section == 0 {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LessonCollectionViewCell", for: indexPath) as! LessonCollectionViewCell
-                
-                if let lesson = selectedCourse?.lessons[indexPath.item] {
-                    cell.lessonTitle.text = lesson.lessonTitle
-                    cell.lessonDuration.text = "\(lesson.lessonDuration) mins"
-                    cell.lessonImage.image = UIImage(named: "PlayButtonImage")
-                    // You can set lesson image if available
-                    // cell.lessonImage.image = ...
-                }
-                
-                return cell
-            } else {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AssessmentButtonCell", for: indexPath) as! AssessmentButtonCell
-                cell.takeAssessmentButton.addTarget(self, action: #selector(takeAssessmentButtonTapped), for: .touchUpInside)
-                return cell
+        if indexPath.section == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LessonCollectionViewCell", for: indexPath) as! LessonCollectionViewCell
+            
+            if let lesson = selectedCourse?.lessons[indexPath.item] {
+                cell.lessonTitle.text = lesson.lessonTitle
+                cell.lessonDuration.text = "\(lesson.lessonDuration) mins"
+                cell.lessonImage.image = UIImage(named: "PlayButtonImage")
+                // You can set lesson image if available
+                // cell.lessonImage.image = ...
             }
+            
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AssessmentButtonCell", for: indexPath) as! AssessmentButtonCell
+            cell.takeAssessmentButton.addTarget(self, action: #selector(takeAssessmentButtonTapped), for: .touchUpInside)
+            return cell
         }
-   
+    }
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let path = Bundle.main.path(forResource: "Accessibility", ofType: "mp4") else{
@@ -82,9 +82,9 @@ extension LessonViewController: UICollectionViewDelegate, UICollectionViewDataSo
             player.play()
         }
     }
-
+    
     @objc func takeAssessmentButtonTapped() {
-            // Handle "Take Assessment" button tap
-            print("Take Assessment button tapped")
-        }
+        // Handle "Take Assessment" button tap
+        print("Take Assessment button tapped")
+    }
 }

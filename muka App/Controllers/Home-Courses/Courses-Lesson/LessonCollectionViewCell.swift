@@ -13,14 +13,14 @@ class LessonCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lessonImage: UIImageView!
     
     override func awakeFromNib() {
-            super.awakeFromNib()
-            
+        super.awakeFromNib()
+        
         // Customize appearance
         layer.cornerRadius = 20
-//            layer.shadowColor = UIColor.black.cgColor
-//            layer.shadowOffset = CGSize(width: 0, height: 2)
-//            layer.shadowOpacity = 0.3
+        //            layer.shadowColor = UIColor.black.cgColor
+        //            layer.shadowOffset = CGSize(width: 0, height: 2)
+        //            layer.shadowOpacity = 0.3
         clipsToBounds = false
-        }
+    }
     
 }

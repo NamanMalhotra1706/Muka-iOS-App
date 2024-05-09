@@ -91,13 +91,13 @@ class Quiz {
         return sampleQuestions[numberQuestion].note
     }
     
-     func nextQuestion()->Bool{
+    func nextQuestion()->Bool{
         if numberQuestion + 1 < sampleQuestions.count{
             numberQuestion+=1
             return false
         }
         else{
-           numberQuestion=0
+            numberQuestion=0
             return true
         }
     }

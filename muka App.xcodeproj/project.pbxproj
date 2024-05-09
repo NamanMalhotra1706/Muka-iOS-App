@@ -26,12 +26,13 @@
 		3FB0CB4A2BEA381E00DFADAB /* Accessibility.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FB0CB492BEA381000DFADAB /* Accessibility.mp4 */; };
 		3FBCF1F32BE3D33E002A02E9 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCF1F22BE3D33E002A02E9 /* ChallengesViewController.swift */; };
 		3FBCF1F52BE3D369002A02E9 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCF1F42BE3D369002A02E9 /* Challenge.swift */; };
-		3FBCF1F72BE3D3EA002A02E9 /* CurrentWeekQuizCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCF1F62BE3D3EA002A02E9 /* CurrentWeekQuizCell.swift */; };
 		3FBCF1F92BE3D3FD002A02E9 /* QuizHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCF1F82BE3D3FD002A02E9 /* QuizHistoryCell.swift */; };
 		3FC00F2C2BDB5FA9000A10F9 /* ChallengesQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC00F2B2BDB5FA9000A10F9 /* ChallengesQuizViewController.swift */; };
 		3FC00F2E2BDB5FC1000A10F9 /* ChallengesQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC00F2D2BDB5FC1000A10F9 /* ChallengesQuiz.swift */; };
 		3FC369922BD8DE540095F11A /* Data Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC369912BD8DE540095F11A /* Data Models.swift */; };
 		3FD071512BEA282F002B9D93 /* AssessmentButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD071502BEA282F002B9D93 /* AssessmentButtonCell.swift */; };
+		3FD7FE282BED039400BAACFD /* CurrentWeekQuizCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7FE272BED039400BAACFD /* CurrentWeekQuizCell.swift */; };
+		3FD7FE2A2BED1DE600BAACFD /* TakeChallenegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7FE292BED1DE600BAACFD /* TakeChallenegeViewController.swift */; };
 		3FDFDF762BCCD9540015CC53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFDF752BCCD9540015CC53 /* AppDelegate.swift */; };
 		3FDFDF782BCCD9540015CC53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFDF772BCCD9540015CC53 /* SceneDelegate.swift */; };
 		3FDFDF7F2BCCD9560015CC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDFDF7E2BCCD9560015CC53 /* Assets.xcassets */; };
@@ -60,12 +61,13 @@
 		3FB0CB492BEA381000DFADAB /* Accessibility.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Accessibility.mp4; sourceTree = "<group>"; };
 		3FBCF1F22BE3D33E002A02E9 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
 		3FBCF1F42BE3D369002A02E9 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
-		3FBCF1F62BE3D3EA002A02E9 /* CurrentWeekQuizCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeekQuizCell.swift; sourceTree = "<group>"; };
 		3FBCF1F82BE3D3FD002A02E9 /* QuizHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHistoryCell.swift; sourceTree = "<group>"; };
 		3FC00F2B2BDB5FA9000A10F9 /* ChallengesQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesQuizViewController.swift; sourceTree = "<group>"; };
 		3FC00F2D2BDB5FC1000A10F9 /* ChallengesQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesQuiz.swift; sourceTree = "<group>"; };
 		3FC369912BD8DE540095F11A /* Data Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Models.swift"; sourceTree = "<group>"; };
 		3FD071502BEA282F002B9D93 /* AssessmentButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentButtonCell.swift; sourceTree = "<group>"; };
+		3FD7FE272BED039400BAACFD /* CurrentWeekQuizCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeekQuizCell.swift; sourceTree = "<group>"; };
+		3FD7FE292BED1DE600BAACFD /* TakeChallenegeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeChallenegeViewController.swift; sourceTree = "<group>"; };
 		3FDFDF722BCCD9540015CC53 /* muka App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "muka App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDFDF752BCCD9540015CC53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FDFDF772BCCD9540015CC53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,8 +106,9 @@
 				3F2029AC2BEBA77F00F9D1EC /* challengesQuizTableViewCell.swift */,
 				3FC00F2B2BDB5FA9000A10F9 /* ChallengesQuizViewController.swift */,
 				3FBCF1F22BE3D33E002A02E9 /* ChallengesViewController.swift */,
-				3FBCF1F62BE3D3EA002A02E9 /* CurrentWeekQuizCell.swift */,
 				3FBCF1F82BE3D3FD002A02E9 /* QuizHistoryCell.swift */,
+				3FD7FE272BED039400BAACFD /* CurrentWeekQuizCell.swift */,
+				3FD7FE292BED1DE600BAACFD /* TakeChallenegeViewController.swift */,
 			);
 			path = challenges;
 			sourceTree = "<group>";
@@ -328,10 +331,12 @@
 				3F48457B2BEA440800CABF5B /* ProfileTableViewController.swift in Sources */,
 				3FC00F2C2BDB5FA9000A10F9 /* ChallengesQuizViewController.swift in Sources */,
 				3F9657B72BE20F8300E64046 /* ProgressViewController.swift in Sources */,
+				3FD7FE282BED039400BAACFD /* CurrentWeekQuizCell.swift in Sources */,
 				3F2029B12BEBB2FB00F9D1EC /* BadgeCell.swift in Sources */,
 				3F2A58EE2BE35ECC0030DB44 /* PlainCircularProgressBar.swift in Sources */,
 				3FBCF1F92BE3D3FD002A02E9 /* QuizHistoryCell.swift in Sources */,
 				3F35DC052BDA19A600FFF6B0 /* Assessments-Quiz.swift in Sources */,
+				3FD7FE2A2BED1DE600BAACFD /* TakeChallenegeViewController.swift in Sources */,
 				3F4845792BEA43FD00CABF5B /* UserProfileModel.swift in Sources */,
 				3F2029B32BEBB30600F9D1EC /* MedalCell.swift in Sources */,
 				3F8E6DAD2BEA58E6004927F4 /* EditProfileTableViewController.swift in Sources */,
@@ -343,7 +348,6 @@
 				3FC00F2E2BDB5FC1000A10F9 /* ChallengesQuiz.swift in Sources */,
 				3F6561A92BE20514003F1EEC /* CourseHome.swift in Sources */,
 				3F2029B52BEBC58000F9D1EC /* AchievementViewController.swift in Sources */,
-				3FBCF1F72BE3D3EA002A02E9 /* CurrentWeekQuizCell.swift in Sources */,
 				3FE6012B2BE9E73D0028E065 /* LessonCollectionViewCell.swift in Sources */,
 				3FDFDF762BCCD9540015CC53 /* AppDelegate.swift in Sources */,
 				3FE6012D2BE9E78B0028E065 /* LessonViewController.swift in Sources */,

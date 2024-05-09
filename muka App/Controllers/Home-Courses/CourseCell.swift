@@ -10,10 +10,10 @@ class CourseCell: UITableViewCell {
     
     @IBOutlet weak var takeAssessmentButton: UIButton!
     
-//    func configure(with course: CourseHome) {
-//        courseNameLabel.text = course.courseName
-//        courseIconImageView.image = UIImage(named: course.courseIcon)
-//    }
+    //    func configure(with course: CourseHome) {
+    //        courseNameLabel.text = course.courseName
+    //        courseIconImageView.image = UIImage(named: course.courseIcon)
+    //    }
     
     override class func awakeFromNib() {
         super.awakeFromNib()

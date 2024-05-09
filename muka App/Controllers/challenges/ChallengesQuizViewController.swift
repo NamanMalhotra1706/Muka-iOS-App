@@ -8,7 +8,7 @@
 import UIKit
 
 class ChallengesQuizViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-
+    
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var questionNumber: UILabel!
     @IBOutlet weak var questionText: UILabel!
@@ -18,7 +18,7 @@ class ChallengesQuizViewController: UIViewController, UIImagePickerControllerDel
     @IBOutlet weak var Note: UILabel!
     
     @IBOutlet weak var nextQuestion: UIButton!
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +28,7 @@ class ChallengesQuizViewController: UIViewController, UIImagePickerControllerDel
         questionText.textColor = UIColor.black
         
         questionNumber.text = "Question \(challenges.questionNumber+1) of \(challenges.sampleQuestionsChallanges.count)"
-
+        
     }
     
     @IBAction func moveToNextQuestion(_ sender: UIButton) {
@@ -91,11 +91,11 @@ class ChallengesQuizViewController: UIViewController, UIImagePickerControllerDel
         
         // Ading actions to Controllers
         alertControler.addAction(cancelAction)
-   
+        
         
         
         present(alertControler,animated: true,completion: nil)
     }
     
-
+    
 }

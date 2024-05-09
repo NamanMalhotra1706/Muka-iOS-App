@@ -31,8 +31,8 @@ struct CourseHome {
     let lessons  : [CoursesLesson]
     
     var totalDuration: Int {
-            return lessons.reduce(0) { $0 + $1.lessonDuration }
-        }
+        return lessons.reduce(0) { $0 + $1.lessonDuration }
+    }
     
 }
 
@@ -40,7 +40,7 @@ struct CourseHome {
 class CourseDataModel {
     
     var sampleCourses: [CourseHome] = []
-
+    
     
     init() {
         sampleCourses.append(CourseHome(courseId: 1, courseName: "Introduction to ISL", courseIcon: "commonCourseIcon", status: .completed , image: UIImage(named: "Basic-IntroToISL")! ,hasDisclouserIndicator: true,lessons:
@@ -120,9 +120,9 @@ class CourseDataModel {
     
     func getLessonsInCourses(IndexPath idx: Int) -> [CoursesLesson] {
         return sampleCourses[idx].lessons
-        }
-    
-    
     }
+    
+    
+}
 
 

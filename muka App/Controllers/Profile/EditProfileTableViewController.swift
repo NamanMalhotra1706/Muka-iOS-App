@@ -8,7 +8,7 @@
 import UIKit
 
 class EditProfileTableViewController: UITableViewController {
-
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -17,7 +17,7 @@ class EditProfileTableViewController: UITableViewController {
     
     
     var receivedData: Int?
-
+    
     var profileUpdated = false
     
     override func viewDidLoad() {
@@ -27,25 +27,25 @@ class EditProfileTableViewController: UITableViewController {
     
     func displayCurrentUserDetail(){
         guard let userId = receivedData else {
-                    print("No user ID received.")
-                    return
-                }
+            print("No user ID received.")
+            return
+        }
         guard let userProfile = user.sampleUsers.first(where: { $0.userId == userId }) else {
-                    print("User profile not found for ID:", userId)
-                    return
-                }
+            print("User profile not found for ID:", userId)
+            return
+        }
         nameTextField.text = userProfile.userName
         emailTextField.text = userProfile.userEmail
     }
     
-
-
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 5
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return 1
     }
     

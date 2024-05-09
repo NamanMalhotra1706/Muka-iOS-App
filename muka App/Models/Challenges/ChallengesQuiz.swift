@@ -15,13 +15,13 @@ class challengeQuiz{
         challengesQuestion(questionId: "4", questionText: "Show the sign for 'help'.", imageURL: nil),
         challengesQuestion(questionId: "5", questionText: "How do you sign 'sorry' in Indian sign language?", imageURL: nil)
         
-        ]
-        
-        var questionNumber = 0
-        var challengesScore = 0
+    ]
     
-        
-     func checkAnswer() -> Bool {
+    var questionNumber = 0
+    var challengesScore = 0
+    
+    
+    func checkAnswer() -> Bool {
         
         return false
     }

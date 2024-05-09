@@ -1,7 +1,7 @@
 import UIKit
 
 class AssessmentQuizViewController: UIViewController {
-
+    
     @IBOutlet weak var imageQuestion: UIImageView!
     @IBOutlet weak var questionNumber: UILabel!
     @IBOutlet weak var option4: UIButton!
@@ -20,7 +20,7 @@ class AssessmentQuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         
+        
         progressBar.progress = assessmentQuiz.getProgress()
         
         //answerLabel Hidden First
@@ -52,38 +52,38 @@ class AssessmentQuizViewController: UIViewController {
     
     @IBAction func userAnswerButton(_ sender: UIButton) {
         let userAnswer = sender.titleLabel?.text ?? ""
-            
-            let rightAnswer = assessmentQuiz.checkAnswer(userAnswer: userAnswer)
-            
-            
-            for button in answerButtons {
-                if button.titleLabel?.text == assessmentQuiz.sampleQuestions[assessmentQuiz.numberQuestion].options[assessmentQuiz.sampleQuestions[assessmentQuiz.numberQuestion].correctOptionIndex] {
-                    // Highlight correct answer in green
-                    button.backgroundColor = .systemGreen
-                    button.configuration?.baseForegroundColor = UIColor.white
-                }
-                
-                if button == sender {
-                    button.isUserInteractionEnabled = false
-                    
-                    if rightAnswer {
-                        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
-                        button.backgroundColor = .systemGreen
-                        button.configuration?.baseForegroundColor = UIColor.white
-                    } else {
-                        button.backgroundColor = .red
-                        button.configuration?.baseForegroundColor = UIColor.white
-                        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
-                        let generator = UIImpactFeedbackGenerator(style: .heavy)
-                        generator.impactOccurred()
-                    }
-                } else {
-                    button.isUserInteractionEnabled = false;
-                }
+        
+        let rightAnswer = assessmentQuiz.checkAnswer(userAnswer: userAnswer)
+        
+        
+        for button in answerButtons {
+            if button.titleLabel?.text == assessmentQuiz.sampleQuestions[assessmentQuiz.numberQuestion].options[assessmentQuiz.sampleQuestions[assessmentQuiz.numberQuestion].correctOptionIndex] {
+                // Highlight correct answer in green
+                button.backgroundColor = .systemGreen
+                button.configuration?.baseForegroundColor = UIColor.white
             }
             
-            answerLabel.isHidden = false
-            nextQuestion.isHidden = false
+            if button == sender {
+                button.isUserInteractionEnabled = false
+                
+                if rightAnswer {
+                    button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+                    button.backgroundColor = .systemGreen
+                    button.configuration?.baseForegroundColor = UIColor.white
+                } else {
+                    button.backgroundColor = .red
+                    button.configuration?.baseForegroundColor = UIColor.white
+                    button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+                    let generator = UIImpactFeedbackGenerator(style: .heavy)
+                    generator.impactOccurred()
+                }
+            } else {
+                button.isUserInteractionEnabled = false;
+            }
+        }
+        
+        answerLabel.isHidden = false
+        nextQuestion.isHidden = false
         
     }
     
@@ -105,7 +105,7 @@ class AssessmentQuizViewController: UIViewController {
         option4.setTitle("\(options[3])", for: .normal)
         
         answerLabel.isHidden = true
-    
+        
         nextQuestion.isHidden = true
         
         
@@ -119,7 +119,7 @@ class AssessmentQuizViewController: UIViewController {
     }
     
     
-   @IBAction func moveToNextQuestion(_ sender: UIButton) {
+    @IBAction func moveToNextQuestion(_ sender: UIButton) {
         
         if assessmentQuiz.nextQuestion() {
             

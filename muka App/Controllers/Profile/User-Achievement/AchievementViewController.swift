@@ -52,7 +52,7 @@ class AchievementViewController: UIViewController,UICollectionViewDelegate, UICo
             return cell
         } else if collectionView == medalsCollectionView {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "medalCell", for: indexPath) as! MedalCell
-            if let medal = myUser?.completedCourses[indexPath.item].badgesEarned {
+            if let medal = myUser?.completedCourses[indexPath.item].medalsEarned {
                 cell.imageView.image = medal.imageName
                 cell.titleLabel.text = medal.title
             }
@@ -60,5 +60,7 @@ class AchievementViewController: UIViewController,UICollectionViewDelegate, UICo
         }
         return UICollectionViewCell()
     }
+    
+    
     
 }
