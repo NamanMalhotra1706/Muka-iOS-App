@@ -56,25 +56,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1 of 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAA-Sj-U3C">
-                                <rect key="frame" x="16" y="156" width="361" height="27.666666666666657"/>
+                                <rect key="frame" x="16" y="208" width="361" height="27.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1. What does the below sign indicates?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0B-XI-u7l">
-                                <rect key="frame" x="16" y="195.66666666666666" width="361" height="20.333333333333343"/>
+                                <rect key="frame" x="16" y="247.66666666666666" width="361" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thankyou sign" translatesAutoresizingMaskIntoConstraints="NO" id="SpN-dh-lOt">
-                                <rect key="frame" x="66" y="233" width="260" height="169"/>
+                                <rect key="frame" x="66" y="285" width="260" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="169" id="kGg-Gu-7ZO"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydd-dX-QFU">
-                                <rect key="frame" x="30" y="553" width="153" height="67"/>
+                                <rect key="frame" x="30" y="605" width="153" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="153" id="4r4-fe-QoU"/>
                                     <constraint firstAttribute="height" constant="67" id="HBP-sq-VsL"/>
@@ -89,10 +89,10 @@
                                 </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="xvz-Id-2Am">
-                                <rect key="frame" x="16" y="129" width="361" height="4"/>
+                                <rect key="frame" x="16" y="181" width="361" height="4"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9g-p4-Kbe">
-                                <rect key="frame" x="30" y="454" width="153" height="67"/>
+                                <rect key="frame" x="30" y="506" width="153" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="153" id="FjE-3o-RMg"/>
                                     <constraint firstAttribute="height" constant="67" id="IHb-HK-Hf2"/>
@@ -107,7 +107,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gB-NS-487">
-                                <rect key="frame" x="210" y="454" width="153" height="67"/>
+                                <rect key="frame" x="210" y="506" width="153" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="5Kg-FK-yR8"/>
                                     <constraint firstAttribute="width" constant="153" id="MCr-ZJ-CVY"/>
@@ -122,7 +122,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe2-r0-svf">
-                                <rect key="frame" x="210" y="553" width="153" height="67"/>
+                                <rect key="frame" x="210" y="605" width="153" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="BMV-aQ-a3C"/>
                                     <constraint firstAttribute="width" constant="153" id="vPV-rO-Zzy"/>
@@ -137,7 +137,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note :  The first closed amnd two thumbs pointings upward sign indicates the 'Approval' towards something" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEU-Gg-8jd">
-                                <rect key="frame" x="16" y="642" width="361" height="61"/>
+                                <rect key="frame" x="16" y="694" width="361" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="PS9-ev-auk"/>
                                 </constraints>
@@ -146,7 +146,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odZ-oS-Kxw">
-                                <rect key="frame" x="264" y="720" width="99" height="40"/>
+                                <rect key="frame" x="264" y="772" width="99" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MGN-9Y-eFK"/>
                                 </constraints>
@@ -414,7 +414,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pjj-sa-XlO">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pjj-sa-XlO" customClass="CurrentWeekCollectionViewCell" customModule="muka_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="111"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="33m-BL-Ecx">
@@ -453,6 +453,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="128" height="111"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="aSB-aD-FR3" id="vof-wK-7ge"/>
+                                            <outlet property="scoreLabel" destination="iZP-Ns-w1p" id="RCx-Nj-tLu"/>
+                                            <outlet property="titleLabel" destination="NAj-T8-ct9" id="9Vy-Ab-uza"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -486,6 +491,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="currentWeekCollectionView" destination="uti-xk-duf" id="260-Nt-b3b"/>
                         <outlet property="tableView" destination="TRE-Lh-Mkl" id="nP6-1f-rFo"/>
                         <segue destination="fAz-0c-Ysu" kind="show" identifier="takeAChallenge" id="ND2-kk-Spe"/>
                     </connections>
@@ -1285,7 +1291,6 @@ offline</string>
         <!--Course Home View Controller-->
         <scene sceneID="9YQ-1I-g3g">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kr1-8h-z8J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="cA6-za-PKl" customClass="CourseHomeViewController" customModule="muka_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4vc-BU-KhQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -1322,7 +1327,7 @@ offline</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRh-UY-N9G" customClass="PlainCircularProgressBar" customModule="muka_App" customModuleProvider="target">
-                                <rect key="frame" x="20" y="201.33333333333334" width="118" height="108.00000000000003"/>
+                                <rect key="frame" x="25" y="196.33333333333337" width="108" height="118"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ao5-qa-IWo">
                                         <rect key="frame" x="21.666666666666664" y="36.666666666666657" width="75" height="34.333333333333343"/>
@@ -1527,6 +1532,7 @@ offline</string>
                         <segue destination="me7-z9-79h" kind="show" identifier="showLessonDetailSegue" id="8c3-q5-vxP"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kr1-8h-z8J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-8770.2290076335867" y="1150"/>
         </scene>
@@ -2428,8 +2434,8 @@ offline</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WJ0-Qb-PCc"/>
-        <segue reference="uZp-3R-4AU"/>
+        <segue reference="wed-9p-VFL"/>
+        <segue reference="ctu-wl-gLR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="100%" width="186" height="162"/>

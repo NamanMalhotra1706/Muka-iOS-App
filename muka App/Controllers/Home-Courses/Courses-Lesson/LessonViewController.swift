@@ -9,7 +9,7 @@ class LessonViewController: UIViewController {
     @IBOutlet weak var courseImage: UIImageView!
     
     var selectedCourse: CourseHome?
-    
+    var currentUser: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,16 +70,52 @@ extension LessonViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let path = Bundle.main.path(forResource: "Accessibility", ofType: "mp4") else{
-            print("video not found")
-            return
-        }
-        
-        let player = AVPlayer.init(url: URL(filePath: path))
-        let playerController = AVPlayerViewController()
-        playerController.player = player
-        present(playerController, animated: true){
-            player.play()
+        if indexPath.section == 0 {
+            // Get the selected lesson
+            guard let lesson = selectedCourse?.lessons[indexPath.item], let currentUser = currentUser else {
+                print("Lesson not found or current user not set")
+                return
+            }
+            
+            // Check if the lesson title has been clicked before
+            let lessonTitle = lesson.lessonTitle
+            if let path = Bundle.main.path(forResource: lessonTitle, ofType: "mp4") {
+                // Initialize AVPlayer with the video URL
+                let player = AVPlayer(url: URL(fileURLWithPath: path))
+                
+                // Initialize AVPlayerViewController
+                let playerViewController = AVPlayerViewController()
+                playerViewController.player = player
+                
+                // Present the player view controller
+                present(playerViewController, animated: true) {
+                    // Start playing the video
+                    player.play()
+
+                    
+                    guard !LessonManager.clickedLessonTitles.contains(lessonTitle) else {
+                                print("Lesson already clicked")
+                                return
+                            }
+            
+            // Print the lesson title to the console
+            print("Selected lesson title:", lessonTitle)
+    
+                                
+                    // Update user's completed videos count
+                    if let currentCourseID = self.selectedCourse?.courseId {
+                        let previousCount = user.getUserCompletion(for: currentUser, courseID: currentCourseID)
+                        print("User's completed videos count before update: \(previousCount)")
+                        user.updateUserCompletedVideos(for: currentUser, courseID: currentCourseID, numberOfVideosCompleted: 1)
+                        print("User's completed videos count after update: \(user.getUserCompletion(for: currentUser, courseID: currentCourseID))")
+                        
+                        // Add the lesson title to the clickedLessonTitles set
+                        LessonManager.clickedLessonTitles.insert(lessonTitle)
+                    }
+                }
+            } else {
+                print("Video not found for lesson:", lessonTitle)
+            }
         }
     }
     

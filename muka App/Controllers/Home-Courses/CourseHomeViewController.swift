@@ -36,6 +36,7 @@ class CourseHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         userProgress.progress = progressPercentage
         
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -43,6 +44,28 @@ class CourseHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         if let selectedIndexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: selectedIndexPath, animated: true)
         }
+        
+        if let selectedCourseId = selectedCourse?.courseId{
+            let userCompletion = user.getUserCompletion(for: currentUser, courseID: selectedCourseId)
+            print(userCompletion)
+            
+            let currentCourseEnrolled = user.sampleUsers[currentUser].currentCourse
+            
+            userCurrentWorkingCourseName.text = currentCourseEnrolled.title
+            
+            // Calculate user's progress
+            let totalVideos = currentCourseEnrolled.totalVideos
+            let completedVideos = userCompletion
+            
+            let progressPercentage = Float(completedVideos) / Float(totalVideos)
+            userProgressPercentage.text = "\(Int(progressPercentage * 100))%"
+            
+            // Update progress bar
+            userProgress.progress = progressPercentage
+            
+            
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -119,6 +142,7 @@ class CourseHomeViewController: UIViewController, UITableViewDelegate, UITableVi
         if segue.identifier == "showLessonDetailSegue" {
             if let lessonViewController = segue.destination as? LessonViewController {
                 lessonViewController.selectedCourse = selectedCourse
+                lessonViewController.currentUser = currentUser
             }
         }
     }

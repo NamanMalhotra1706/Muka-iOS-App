@@ -1,6 +1,8 @@
 import Foundation
 import UIKit
 
+
+
 struct CourseCompeletionByUser {
     let courseId: Int
     let courseName: String
@@ -20,10 +22,10 @@ struct UserProfile{
 }
 
 struct CurrentCourseEnrolled{
-    let title: String
-    let totalVideos: Int
-    let userCompletedVideos: Int
-    let isAssessmnetTaken: Bool
+    var title: String
+    var totalVideos: Int
+    var userCompletedVideos: Int
+    var isAssessmnetTaken: Bool
 }
 
 struct UserMedals {
@@ -58,7 +60,7 @@ class User {
                                        challengesCompleted:[levelAChallenge.basicChallenges[0], levelBChallenge.intermediateChallenges[3],
                                                             levelCChallenge.advancedChallenges[2]],
                                        
-                                       currentCourse: CurrentCourseEnrolled(title: "\(coursesData.sampleCourses[4].courseName)", totalVideos:coursesData.sampleCourses[4].lessons.count , userCompletedVideos: coursesData.sampleCourses[4].lessons.count-1, isAssessmnetTaken: false)))
+                                       currentCourse: CurrentCourseEnrolled(title: "\(coursesData.sampleCourses[4].courseName)", totalVideos:coursesData.sampleCourses[4].lessons.count , userCompletedVideos: 0, isAssessmnetTaken: false)))
         
         sampleUsers.append(UserProfile(userId: 2, userAvatar: UIImage(named: "Bitmogi")! ,userName: "Mansvi Grover", userEmail: "mansvi0859.be21@chitkara.edu.in",
                                        completedCourses: [
@@ -75,7 +77,7 @@ class User {
                                        challengesCompleted:[levelAChallenge.basicChallenges[4], levelBChallenge.intermediateChallenges[1],
                                                             levelCChallenge.advancedChallenges[3]],
                                        
-                                       currentCourse: CurrentCourseEnrolled(title: "\(coursesData.sampleCourses[2].courseName)", totalVideos:coursesData.sampleCourses[2].lessons.count , userCompletedVideos: coursesData.sampleCourses[2].lessons.count-1, isAssessmnetTaken: true)))
+                                       currentCourse: CurrentCourseEnrolled(title: "\(coursesData.sampleCourses[2].courseName)", totalVideos:coursesData.sampleCourses[2].lessons.count , userCompletedVideos: 0, isAssessmnetTaken: true)))
     }
     
     func updateUser(userId: Int, newUserName: String, newUserEmail: String) {
@@ -138,8 +140,35 @@ class User {
         return nil
     }
     
+    func updateUserCompletedVideos(for userID: Int, courseID: Int, numberOfVideosCompleted: Int) {
+        if let userIndex = sampleUsers.firstIndex(where: { $0.userId == userID }) {
+            // Get the current course enrollment
+            var currentCourse = sampleUsers[userIndex].currentCourse
+            
+            // Update the number of completed videos
+            currentCourse.userCompletedVideos += numberOfVideosCompleted
+            
+            // Replace the updated current course enrollment
+            sampleUsers[userIndex].currentCourse = currentCourse
+            
+//            print(currentCourse.userCompletedVideos)
+        } else {
+            print("User not found with ID:", userID)
+        }
+    }
     
+    func getUserCompletion(for userId: Int, courseID: Int) -> Int {
+        if let userIndex = sampleUsers.firstIndex(where: { $0.userId == userId }) {
+            var currentCourse = self.sampleUsers[userIndex].currentCourse
+            return currentCourse.userCompletedVideos
+        } else { return -1 }
+    }
     
+
+}
+
+class LessonManager {
+    static var clickedLessonTitles: Set<String> = Set()
 }
 
 

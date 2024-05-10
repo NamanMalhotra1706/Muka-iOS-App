@@ -2,6 +2,7 @@ import UIKit
 
 class ChallengesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var currentWeekCollectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     
     var challenges: [Challenge] = []

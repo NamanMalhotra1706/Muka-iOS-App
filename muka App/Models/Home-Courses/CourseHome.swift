@@ -43,28 +43,48 @@ class CourseDataModel {
     
     
     init() {
-        sampleCourses.append(CourseHome(courseId: 1, courseName: "Introduction to ISL", courseIcon: "commonCourseIcon", status: .completed , image: UIImage(named: "Basic-IntroToISL")! ,hasDisclouserIndicator: true,lessons:
-                                            [CoursesLesson(lessonId: 1, lessonTitle: "Basic ISL Alphabet", lessonDuration: 5),
-                                             CoursesLesson(lessonId: 2, lessonTitle: "Greetings and Farewells",lessonDuration: 4),
-                                             CoursesLesson(lessonId: 3, lessonTitle: "Numbers and Counting",lessonDuration: 4),
-                                             CoursesLesson(lessonId: 4, lessonTitle: "Common Signs for Everyday Objects",lessonDuration: 4),
-                                             CoursesLesson(lessonId: 5, lessonTitle: "Introduction to ISL Grammar",lessonDuration: 4),
+        sampleCourses.append(CourseHome(courseId: 1, courseName: "Daily User Words - I", courseIcon: "commonCourseIcon", status: .completed , image: UIImage(named: "Basic-IntroToISL")! ,hasDisclouserIndicator: true,lessons:
+                                            [CoursesLesson(lessonId: 1, lessonTitle: "Accessibility", lessonDuration: 5),
+                                             CoursesLesson(lessonId: 2, lessonTitle: "All the best",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 3, lessonTitle: "Amazing",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 4, lessonTitle: "Busy",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 5, lessonTitle: "Communicate",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 6, lessonTitle: "Accessibility", lessonDuration: 5),
+                                             CoursesLesson(lessonId: 7, lessonTitle: "All the best",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 8, lessonTitle: "Amazing",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 9, lessonTitle: "Busy",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 10, lessonTitle: "Communicate",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 11, lessonTitle: "Cool",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 12, lessonTitle: "Deaf",lessonDuration: 4),
                                             ]))
         
-        sampleCourses.append(CourseHome(courseId: 2, courseName: "Family and Relationships", courseIcon: "intermediate_sign_language_icon", status: .takeAssessment, image: UIImage(named: "Basic-Family")!, hasDisclouserIndicator: true,lessons:
-                                            [CoursesLesson(lessonId: 1, lessonTitle: "Family Members and Relatives", lessonDuration: 5),
-                                             CoursesLesson(lessonId: 2, lessonTitle: "Describing Relationships",lessonDuration: 4),
-                                             CoursesLesson(lessonId: 3, lessonTitle: "Family Activities and Traditions",lessonDuration: 4),
-                                             CoursesLesson(lessonId: 4, lessonTitle: "Expressing Emotions and Feelings",lessonDuration: 4),
-                                             CoursesLesson(lessonId: 5, lessonTitle: "Conflict Resolution in Relationships",lessonDuration: 4),
+        sampleCourses.append(CourseHome(courseId: 2, courseName: "Daily User Words - II", courseIcon: "intermediate_sign_language_icon", status: .takeAssessment, image: UIImage(named: "Basic-Family")!, hasDisclouserIndicator: true,lessons:
+                                            [CoursesLesson(lessonId: 1, lessonTitle: "Pen", lessonDuration: 5),
+                                             CoursesLesson(lessonId: 2, lessonTitle: "Please",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 3, lessonTitle: "Sad",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 4, lessonTitle: "See you Tommorow",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 5, lessonTitle: "Sorry",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 6, lessonTitle: "Start", lessonDuration: 5),
+                                             CoursesLesson(lessonId: 7, lessonTitle: "Tea",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 8, lessonTitle: "Thank You",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 9, lessonTitle: "Time",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 10, lessonTitle: "Win",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 11, lessonTitle: "Work",lessonDuration: 4),
                                             ]))
         
-        sampleCourses.append(CourseHome(courseId: 3, courseName: "Colors and Shapes", courseIcon: "advanced_sign_language_icon", status: .inProgress, image: UIImage(named: "Basic-Color&Shape")!, hasDisclouserIndicator: true,lessons:
-                                            [CoursesLesson(lessonId: 1, lessonTitle: "Primary Colors in ISL", lessonDuration: 5),
-                                             CoursesLesson(lessonId: 2, lessonTitle: "Shapes and Geometric Figures",lessonDuration: 4),
-                                             CoursesLesson(lessonId: 3, lessonTitle: "Describing Objects by Color and Shape",lessonDuration: 4),
-                                             CoursesLesson(lessonId: 4, lessonTitle: "Patterns and Designs",lessonDuration: 4),
-                                             CoursesLesson(lessonId: 5, lessonTitle: "Art and Creativity in ISL",lessonDuration: 4),
+        sampleCourses.append(CourseHome(courseId: 3, courseName: "Daily User Words - III", courseIcon: "advanced_sign_language_icon", status: .inProgress, image: UIImage(named: "Basic-Color&Shape")!, hasDisclouserIndicator: true,lessons:
+                                            [CoursesLesson(lessonId: 1, lessonTitle: "Enjoy", lessonDuration: 5),
+                                             CoursesLesson(lessonId: 2, lessonTitle: "Finish",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 3, lessonTitle: "Good Afternoon",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 4, lessonTitle: "Good Morning",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 5, lessonTitle: "Good Night",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 6, lessonTitle: "Good", lessonDuration: 5),
+                                             CoursesLesson(lessonId: 7, lessonTitle: "Happy",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 8, lessonTitle: "Hearing",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 9, lessonTitle: "Home",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 10, lessonTitle: "I, Me",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 11, lessonTitle: "Important",lessonDuration: 4),
+                                             CoursesLesson(lessonId: 12, lessonTitle: "Office",lessonDuration: 4),
                                             ]))
         
         sampleCourses.append(CourseHome(courseId: 4, courseName: "Daily Activities", courseIcon: "sign_language_certification_icon", status:.locked,image: UIImage(named: "Basic-DailyActivities")!, hasDisclouserIndicator: false,lessons:
