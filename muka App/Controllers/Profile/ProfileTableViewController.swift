@@ -86,6 +86,10 @@ class ProfileTableViewController: UITableViewController {
             }
         }
         
+        if indexPath.section == 1 && indexPath.row == 0 { // Row for app and account settings
+                performSegue(withIdentifier: "appAndAccountSettings", sender: nil)
+            }
+        
         
         
     }

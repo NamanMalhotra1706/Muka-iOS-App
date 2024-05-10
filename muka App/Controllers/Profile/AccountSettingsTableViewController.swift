@@ -9,6 +9,15 @@ import UIKit
 
 class AccountSettingsTableViewController: UITableViewController {
 
+    @IBOutlet weak var pushNotificationSwitch: UISwitch!
+    
+    @IBOutlet weak var emailNotificationSwitch: UISwitch!
+    
+    @IBOutlet weak var deleteAccountButton: UIButton!
+    
+    @IBOutlet weak var appVersionLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,13 +32,21 @@ class AccountSettingsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+        switch section {
+            case 0:
+                return 2 // Two rows in the first section
+            case 1:
+                return 1 // One row in the second section
+            case 2:
+                return 1 // One row in the third section
+            default:
+                return 0 // Default return 0 if unknown section
+            }
+        }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
