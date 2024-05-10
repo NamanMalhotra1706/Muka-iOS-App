@@ -22,23 +22,23 @@ class ChallengesQuizViewController: UIViewController, UIImagePickerControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        progressBar.progress = challenges.getProgress()
+        progressBar.progress = challengesQuiz.getProgress()
         
-        questionText.text = "Q\(challenges.questionNumber+1). \(challenges.getTextQuestion())"
+        questionText.text = "Q\(challengesQuiz.questionNumber+1). \(challengesQuiz.getTextQuestion())"
         questionText.textColor = UIColor.black
         
-        questionNumber.text = "Question \(challenges.questionNumber+1) of \(challenges.sampleQuestionsChallanges.count)"
+        questionNumber.text = "Question \(challengesQuiz.questionNumber+1) of \(challengesQuiz.sampleQuestionsChallenges.count)"
         
     }
     
     @IBAction func moveToNextQuestion(_ sender: UIButton) {
         
-        if challenges.nextQuestion(){
-            let alert = UIAlertController(title: "Score: \(challenges.challengesScore)", message: "Do you want to try again?", preferredStyle: .alert)
+        if challengesQuiz.nextQuestion(){
+            let alert = UIAlertController(title: "Score: \(challengesQuiz.challengesScore)", message: "Do you want to try again?", preferredStyle: .alert)
             
             let yesAction = UIAlertAction(title: "Yes", style: .default){
                 _ in
-                challenges.challengesScore = 0
+                challengesQuiz.challengesScore = 0
                 
                 Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.changeQuestion), userInfo: nil, repeats: false)
                 
@@ -59,12 +59,12 @@ class ChallengesQuizViewController: UIViewController, UIImagePickerControllerDel
     }
     
     @objc func changeQuestion() {
-        progressBar.progress = challenges.getProgress()
+        progressBar.progress = challengesQuiz.getProgress()
         
-        questionText.text = "Q\(challenges.questionNumber+1). \(challenges.getTextQuestion())"
+        questionText.text = "Q\(challengesQuiz.questionNumber+1). \(challengesQuiz.getTextQuestion())"
         questionText.textColor = UIColor.black
         
-        questionNumber.text = "Question \(challenges.questionNumber+1) of \(challenges.sampleQuestionsChallanges.count)"
+        questionNumber.text = "Question \(challengesQuiz.questionNumber+1) of \(challengesQuiz.sampleQuestionsChallenges.count)"
     }
     
     

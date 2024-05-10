@@ -7,7 +7,7 @@ class CourseHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var userProgress: UIProgressView!
     @IBOutlet weak var tableView: UITableView!
     
-    var currentUser = 1
+    var currentUser = user.getLoggedInUser()
     
     var courses: [CourseHome] = CourseDataModel().getAllCourses()
     var selectedCourse: CourseHome?
@@ -15,11 +15,30 @@ class CourseHomeViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         displayData()
+        
+        let size:CGFloat = 110.0 // 35.0 chosen arbitrarily
+
+                let countLabel = UILabel()
+        let level = user.sampleUsers[currentUser].currentEnrolledLesson
+        countLabel.text = "\(level == TypeOfLevel.LevelA ? "Level A" : level == TypeOfLevel.LevelB ? "Level B" : "Level C")"
+        countLabel.textColor = .systemPurple
+        countLabel.textAlignment = .center
+        countLabel.font = UIFont.systemFont(ofSize: 17.0)
+                countLabel.bounds = CGRectMake(0.0, 0.0, size, size)
+                countLabel.layer.cornerRadius = size / 2
+                countLabel.layer.borderWidth = 3.0
+        countLabel.layer.backgroundColor = UIColor.clear.cgColor
+        countLabel.layer.borderColor = UIColor.systemPurple.cgColor
+
+                countLabel.center = CGPointMake(80.0, 270.0)
+
+                self.view.addSubview(countLabel)
     }
     
     func displayData(){
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.showsVerticalScrollIndicator = false
         
         let currentCourseEnrolled = user.sampleUsers[currentUser].currentCourse
         

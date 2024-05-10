@@ -16,7 +16,7 @@ class ProfileTableViewController: UITableViewController {
     
     @IBOutlet weak var profileEmail: UILabel!
     
-    let currentUserId = 1
+    let currentUserId = user.getLoggedInUser()
     
     //var userProfile: UserProfile?
     
@@ -59,6 +59,7 @@ class ProfileTableViewController: UITableViewController {
            let user = sender as? UserProfile {
             achievementVC.myUser = user
         }
+        
     }
     
     @IBAction func unwindToEmojiTableView(segue: UIStoryboardSegue) {

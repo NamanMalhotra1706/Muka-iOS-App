@@ -5,7 +5,7 @@ class ProgressViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let currentUser = 1;
+        let currentUser = user.getLoggedInUser();
         
         // Create a newView
         let newView = UIView(frame: CGRect(x: 0, y: 500, width: self.view.frame.width, height: self.view.frame.width))

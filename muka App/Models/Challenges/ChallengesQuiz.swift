@@ -1,56 +1,59 @@
 import Foundation
 import UIKit
 
-struct challengesQuestion {
-    let questionId: String
-    let questionText: String
-    let imageURL: URL?
+// Structure representing a challenge question
+struct ChallengesQuestion {
+    let questionId: String      // Unique identifier for the question
+    let questionText: String    // Text of the question
+    let imageURL: URL?          // Optional URL for an image related to the question
 }
 
-class challengeQuiz{
-    let sampleQuestionsChallanges: [challengesQuestion] = [
-        challengesQuestion(questionId: "1", questionText: "How to sign 'M' in sign language?", imageURL: nil),
-        challengesQuestion(questionId: "2", questionText: "Please demonstrate the sign for 'thank you'.", imageURL: nil),
-        challengesQuestion(questionId: "3", questionText: "What is the sign for 'yes' in Indian sign language?", imageURL: nil),
-        challengesQuestion(questionId: "4", questionText: "Show the sign for 'help'.", imageURL: nil),
-        challengesQuestion(questionId: "5", questionText: "How do you sign 'sorry' in Indian sign language?", imageURL: nil)
-        
+// Class representing a challenge quiz
+class ChallengeQuiz {
+    let sampleQuestionsChallenges: [ChallengesQuestion] = [
+        // Sample challenge questions initialization
+        ChallengesQuestion(questionId: "1", questionText: "How to sign 'M' in sign language?", imageURL: nil),
+        ChallengesQuestion(questionId: "2", questionText: "Please demonstrate the sign for 'thank you'.", imageURL: nil),
+        ChallengesQuestion(questionId: "3", questionText: "What is the sign for 'yes' in Indian sign language?", imageURL: nil),
+        ChallengesQuestion(questionId: "4", questionText: "Show the sign for 'help'.", imageURL: nil),
+        ChallengesQuestion(questionId: "5", questionText: "How do you sign 'sorry' in Indian sign language?", imageURL: nil)
     ]
     
-    var questionNumber = 0
-    var challengesScore = 0
+    var questionNumber = 0       // Current question number
+    var challengesScore = 0      // Score obtained in the challenge
     
-    
+    // Method to check the answer (currently placeholder)
     func checkAnswer() -> Bool {
-        
         return false
     }
     
-    
-    func getScore()->Int{
+    // Method to get the current score
+    func getScore() -> Int {
         return challengesScore
     }
     
-    func getTextQuestion()->String{
-        return sampleQuestionsChallanges[questionNumber].questionText
+    // Method to get the text of the current question
+    func getTextQuestion() -> String {
+        return sampleQuestionsChallenges[questionNumber].questionText
     }
     
-    func getProgress()->Float{
-        let progress = Float(questionNumber+1)/Float(sampleQuestionsChallanges.count)
+    // Method to get the progress of the quiz
+    func getProgress() -> Float {
+        let progress = Float(questionNumber + 1) / Float(sampleQuestionsChallenges.count)
         return progress
     }
     
-    
-    func nextQuestion()->Bool{
-        if questionNumber+1 <  sampleQuestionsChallanges.count{
-            questionNumber+=1
+    // Method to move to the next question
+    func nextQuestion() -> Bool {
+        if questionNumber + 1 < sampleQuestionsChallenges.count {
+            questionNumber += 1
             return false
-        }
-        else{
+        } else {
             questionNumber = 0
             return true
         }
     }
 }
 
-var challenges = challengeQuiz()
+// Create an instance of the challenge quiz
+var challengesQuiz = ChallengeQuiz()

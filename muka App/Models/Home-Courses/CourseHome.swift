@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 // Define the Status enum to represent different statuses
 enum Status {
     case completed
@@ -16,24 +17,24 @@ enum Status {
 }
 
 struct CoursesLesson {
-    let lessonId: Int
-    let lessonTitle: String
-    let lessonDuration: Int // Duration of the lesson in minutes
+    let lessonId: Int             // Unique identifier for the lesson
+    let lessonTitle: String       // Title of the lesson
+    let lessonDuration: Int       // Duration of the lesson in minutes
 }
 
 struct CourseHome {
-    let courseId: Int
-    let courseName: String
-    let courseIcon: String
-    let status: Status
-    let image: UIImage
-    let hasDisclouserIndicator : Bool
-    let lessons  : [CoursesLesson]
+    let courseId: Int                     // Unique identifier for the course
+    let courseName: String                // Name of the course
+    let courseIcon: String                // Name of the icon representing the course
+    let status: Status                    // Status of the course (completed, takeAssessment, inProgress, locked)
+    let image: UIImage                    // Image representing the course
+    let hasDisclouserIndicator: Bool      // Indicates if the course has a disclosure indicator
+    let lessons: [CoursesLesson]          // Array of lessons within the course
     
     var totalDuration: Int {
+        // Compute the total duration of all lessons in the course
         return lessons.reduce(0) { $0 + $1.lessonDuration }
     }
-    
 }
 
 // Define a class to represent the data model
@@ -136,16 +137,22 @@ class CourseDataModel {
                                             ]))
     }
     
-    func getAllCourses() -> [CourseHome] { return self.sampleCourses }
+    // Get all sample courses
+    func getAllCourses() -> [CourseHome] {
+        return self.sampleCourses
+    }
     
+    // Get lessons within a course at a specific index
     func getLessonsInCourses(IndexPath idx: Int) -> [CoursesLesson] {
         return sampleCourses[idx].lessons
     }
     
+    // Get total number of sample courses
     func getTotalNumberOfCourses() -> Int {
         return sampleCourses.count
     }
     
+    // Get total number of lessons across all sample courses
     func getTotalNumberOfLessons() -> Int {
         var totalLessons = 0
         for course in sampleCourses {
@@ -153,9 +160,8 @@ class CourseDataModel {
         }
         return totalLessons
     }
-    
-    
 }
 
+// Instantiate the CourseDataModel
 var coursesData = CourseDataModel()
 

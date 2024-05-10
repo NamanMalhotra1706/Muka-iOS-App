@@ -1,16 +1,18 @@
 import UIKit
 
+// Structure representing a challenge
 struct Challenge {
-    let title: String
-    let description: String
-    let difficulty: String
-    var progress: Int // Marks obtained by the user
-    let totalMarks: Int // Total marks possible for the challenge
-    let scoredMarks:Int
-    let rewards: String
-    let image: UIImage
+    let title: String           // Title of the challenge
+    let description: String     // Description of the challenge
+    let difficulty: String      // Difficulty level of the challenge
+    var progress: Int           // Progress or marks obtained by the user
+    let totalMarks: Int         // Total marks possible for the challenge
+    let scoredMarks: Int        // Marks scored by the user
+    let rewards: String         // Rewards associated with completing the challenge
+    let image: UIImage?         // Image representing the challenge
 }
 
+// Structure containing Level A challenges
 struct LevelAChallenges {
     let basicChallenges: [Challenge] = [
         Challenge(title: "Basic ISL Alphabet Quiz",
@@ -61,8 +63,11 @@ struct LevelAChallenges {
     ]
 }
 
+// Intatiate levalAChallenegs
 var levelAChallenge = LevelAChallenges()
 
+
+// Structure containing Level B challenges
 struct LevelBChallenges {
     let intermediateChallenges: [Challenge] = [
         Challenge(title: "Family Members and Relationships Test",
@@ -112,7 +117,11 @@ struct LevelBChallenges {
     ]
 }
 
+// Intatiate levalBChallenegs
 var levelBChallenge = LevelBChallenges()
+
+
+// Structure containing Level C challenges
 
 struct LevelCChallenges {
     let advancedChallenges: [Challenge] = [
@@ -163,4 +172,5 @@ struct LevelCChallenges {
     ]
 }
 
+// Intatiate levalCChallenegs
 var levelCChallenge = LevelCChallenges()

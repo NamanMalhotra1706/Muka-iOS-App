@@ -30,6 +30,4 @@ class TakeChallenegeViewController: UIViewController {
         challengeImage.image = recievedChallengeImage
         
     }
-    
-    
 }

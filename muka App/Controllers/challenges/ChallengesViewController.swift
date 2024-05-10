@@ -1,11 +1,12 @@
 import UIKit
 
-class ChallengesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ChallengesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var currentWeekCollectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     
     var challenges: [Challenge] = []
+    var userProfile: UserProfile?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -13,8 +14,18 @@ class ChallengesViewController: UIViewController, UITableViewDataSource, UITable
         
         challenges = levelBChallenge.intermediateChallenges
         
+        userProfile = user.sampleUsers[0]
+        
         tableView.dataSource = self
         tableView.delegate = self
+        
+        tableView.showsVerticalScrollIndicator = false
+        
+        
+      
+            currentWeekCollectionView.dataSource = self
+            currentWeekCollectionView.delegate = self
+        
     }
     
     // MARK: - Table View Data Source
@@ -53,7 +64,27 @@ class ChallengesViewController: UIViewController, UITableViewDataSource, UITable
         performSegue(withIdentifier: "takeAChallenge", sender: selectedChallenge)
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        // Return the number of challenges completed for the current week
+        return userProfile?.challengesCompleted.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CurrentWeekCVC", for: indexPath) as! CurrentWeekCollectionViewCell
+        
+        // Assuming challengesCompleted is an array of Challenge objects
+        if let challenge = userProfile?.challengesCompleted[indexPath.item] {
+            // Configure the cell with challenge data
+            cell.titleLabel.text = challenge.title
+            cell.scoreLabel.text = "Score: \(challenge.scoredMarks)/\(challenge.totalMarks)"
+            cell.imageView.image = challenge.image
+        }
+        
+        return cell
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "takeAChallenge",
            let takeChallenegVC = segue.destination as? TakeChallenegeViewController,
            let indexPath = tableView.indexPathForSelectedRow {
@@ -65,9 +96,14 @@ class ChallengesViewController: UIViewController, UITableViewDataSource, UITable
             takeChallenegVC.recievedChallenegeDescription = selectedChallenge.description
             
             takeChallenegVC.recievedChallengeImage = selectedChallenge.image
+        
+                }
+        //=====================================================
+       
+        
         }
         
     }
     
-}
+    
 
