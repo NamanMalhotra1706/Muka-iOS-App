@@ -34,6 +34,7 @@
 		3FC00F2E2BDB5FC1000A10F9 /* ChallengesQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC00F2D2BDB5FC1000A10F9 /* ChallengesQuiz.swift */; };
 		3FC369922BD8DE540095F11A /* Data Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC369912BD8DE540095F11A /* Data Models.swift */; };
 		3FD071512BEA282F002B9D93 /* AssessmentButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD071502BEA282F002B9D93 /* AssessmentButtonCell.swift */; };
+		3FD170C02BEFB08200436A87 /* PractiseTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD170BF2BEFB08200436A87 /* PractiseTabViewController.swift */; };
 		3FD7FE282BED039400BAACFD /* CurrentWeekQuizCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7FE272BED039400BAACFD /* CurrentWeekQuizCell.swift */; };
 		3FD7FE2A2BED1DE600BAACFD /* TakeChallenegeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7FE292BED1DE600BAACFD /* TakeChallenegeViewController.swift */; };
 		3FDB96282BEDE006003BFD5F /* All the best.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB95EA2BEDD3A7003BFD5F /* All the best.mp4 */; };
@@ -102,6 +103,7 @@
 		3FC00F2D2BDB5FC1000A10F9 /* ChallengesQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesQuiz.swift; sourceTree = "<group>"; };
 		3FC369912BD8DE540095F11A /* Data Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Models.swift"; sourceTree = "<group>"; };
 		3FD071502BEA282F002B9D93 /* AssessmentButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentButtonCell.swift; sourceTree = "<group>"; };
+		3FD170BF2BEFB08200436A87 /* PractiseTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PractiseTabViewController.swift; sourceTree = "<group>"; };
 		3FD7FE272BED039400BAACFD /* CurrentWeekQuizCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeekQuizCell.swift; sourceTree = "<group>"; };
 		3FD7FE292BED1DE600BAACFD /* TakeChallenegeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeChallenegeViewController.swift; sourceTree = "<group>"; };
 		3FDB95EA2BEDD3A7003BFD5F /* All the best.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "All the best.mp4"; path = "Videos/All the best.mp4"; sourceTree = SOURCE_ROOT; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				3F56CDBC2BE8095500888486 /* OnBoardingViewController.swift */,
+				3FD170BF2BEFB08200436A87 /* PractiseTabViewController.swift */,
 				3F6EFBE82BEBD40D0037B7F5 /* Home-Progress */,
 				3F6EFBE52BEBD3770037B7F5 /* Home-Courses */,
 				3F6EFBE42BEBD29B0037B7F5 /* Profile */,
@@ -467,6 +470,7 @@
 				3F35DC052BDA19A600FFF6B0 /* Assessments-Quiz.swift in Sources */,
 				3FD7FE2A2BED1DE600BAACFD /* TakeChallenegeViewController.swift in Sources */,
 				3F4845792BEA43FD00CABF5B /* UserProfileModel.swift in Sources */,
+				3FD170C02BEFB08200436A87 /* PractiseTabViewController.swift in Sources */,
 				3F2029B32BEBB30600F9D1EC /* MedalCell.swift in Sources */,
 				3F8E6DAD2BEA58E6004927F4 /* EditProfileTableViewController.swift in Sources */,
 				3F6768542BEE891700D69AFF /* LoginViewController.swift in Sources */,

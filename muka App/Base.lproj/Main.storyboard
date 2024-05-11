@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GQW-df-Q4U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rSe-dh-kOI">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -211,7 +211,7 @@
         <!--Practice-->
         <scene sceneID="Jeg-9N-rHh">
             <objects>
-                <viewController id="dVs-Df-C7H" customClass="PractiseTabViewController" customModule="muka_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dVs-Df-C7H" customClass="PractiseTabViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vAd-N6-POg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -682,16 +682,16 @@ offline</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggs-Oz-QNf">
-                                <rect key="frame" x="75" y="718" width="244" height="20.333333333333371"/>
+                                <rect key="frame" x="75" y="718" width="243" height="20.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9o-KR-yA6">
-                                        <rect key="frame" x="0.0" y="0.0" width="209.66666666666666" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="208.66666666666666" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="logIn" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYe-D8-jAv">
-                                        <rect key="frame" x="209.66666666666669" y="0.0" width="34.333333333333343" height="20.333333333333332"/>
+                                        <rect key="frame" x="208.66666666666669" y="0.0" width="34.333333333333343" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -699,17 +699,17 @@ offline</string>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bgv-Yl-bne">
-                                <rect key="frame" x="24" y="213" width="345" height="464"/>
+                                <rect key="frame" x="24" y="213" width="344" height="464"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="muka_logo" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-ic-aBG">
-                                        <rect key="frame" x="62.666666666666686" y="-130" width="220" height="192"/>
+                                        <rect key="frame" x="62" y="-130" width="220" height="192"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="220" id="K3q-or-t5u"/>
                                             <constraint firstAttribute="height" constant="192" id="x6A-2c-jcX"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oug-Ye-Iqf">
-                                        <rect key="frame" x="16" y="70" width="313" height="46"/>
+                                        <rect key="frame" x="16" y="70" width="312" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="W05-fJ-Rle"/>
                                         </constraints>
@@ -792,10 +792,10 @@ offline</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uRf-q7-H7a">
-                                        <rect key="frame" x="45" y="259" width="255" height="30"/>
+                                        <rect key="frame" x="45" y="259" width="254" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sp-3E-4qQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray"/>
                                                 <connections>
@@ -803,7 +803,7 @@ offline</string>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="BXe-BU-Ovy">
-                                                <rect key="frame" x="63" y="0.0" width="192" height="30"/>
+                                                <rect key="frame" x="62" y="0.0" width="192" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read the" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFs-ag-DBV">
                                                         <rect key="frame" x="0.0" y="0.0" width="95.333333333333329" height="30"/>
@@ -3022,7 +3022,7 @@ offline</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WJ0-Qb-PCc"/>
+        <segue reference="YqQ-i2-bVA"/>
         <segue reference="ctu-wl-gLR"/>
     </inferredMetricsTieBreakers>
     <resources>
