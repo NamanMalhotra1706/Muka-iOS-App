@@ -15,14 +15,14 @@ struct Challenge {
 // Structure containing Level A challenges
 struct LevelAChallenges {
     let basicChallenges: [Challenge] = [
-        Challenge(title: "Basic ISL Alphabet Quiz",
-                  description: "Test your knowledge of the basic ISL alphabet letters.",
+        Challenge(title: "Daily Words",
+                  description: "Test your knowledge of the Daily words.",
                   difficulty: "Easy",
                   progress: 0,
                   totalMarks: 10,
                   scoredMarks: 8,
-                  rewards: "Earn a 'Letter Learner' badge upon completing the quiz with a high score.",
-                  image: UIImage(named: "Quiz_Alphabet")!),
+                  rewards: "Earn a 'Learner' badge upon completing the quiz with a high score.",
+                  image: UIImage(named: "Quiz_Family")!),
         
         
         Challenge(title: "Greetings and Farewells Test",
@@ -70,14 +70,14 @@ var levelAChallenge = LevelAChallenges()
 // Structure containing Level B challenges
 struct LevelBChallenges {
     let intermediateChallenges: [Challenge] = [
-        Challenge(title: "Family Members and Relationships Test",
-                  description: "Assess your knowledge of ISL signs for family members and relationships.",
+        Challenge(title: "Basic Sign Alphabets",
+                  description: "Assess your knowledge of ISL signs for Alphabets.",
                   difficulty: "Easy",
                   progress: 0,
-                  totalMarks: 20,
-                  scoredMarks: 18,
-                  rewards: "Family Expert",
-                  image: UIImage(named: "Quiz_Family")!),
+                  totalMarks: 5,
+                  scoredMarks: 0,
+                  rewards: "Alphabet Expert",
+                  image: UIImage(named: "Quiz_Alphabet")!),
         
         Challenge(title: "Describing Relationships Challenge",
                   description: "Practice describing various types of relationships in ISL.",

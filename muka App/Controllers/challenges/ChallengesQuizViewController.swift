@@ -67,6 +67,9 @@ class ChallengesQuizViewController: UIViewController, UIImagePickerControllerDel
         questionNumber.text = "Question \(challengesQuiz.questionNumber+1) of \(challengesQuiz.sampleQuestionsChallenges.count)"
     }
     
+    @IBAction func unwindToChallenege(segue: UIStoryboardSegue) {
+        
+    }
     
     
     @IBAction func cameraButtonClicked(_ sender: UIButton) {

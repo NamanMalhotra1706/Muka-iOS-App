@@ -19,7 +19,7 @@
 		3F56CDBD2BE8095500888486 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56CDBC2BE8095500888486 /* OnBoardingViewController.swift */; };
 		3F61BF9B2BEDD7FE00375999 /* CurrentWeekCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F61BF9A2BEDD7FE00375999 /* CurrentWeekCollectionViewCell.swift */; };
 		3F6561A92BE20514003F1EEC /* CourseHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6561A82BE20514003F1EEC /* CourseHome.swift */; };
-		3F6768542BEE891700D69AFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6768532BEE891700D69AFF /* LoginViewController.swift */; };
+		3F6768542BEE891700D69AFF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6768532BEE891700D69AFF /* SignUpViewController.swift */; };
 		3F8E6DAD2BEA58E6004927F4 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E6DAC2BEA58E6004927F4 /* EditProfileTableViewController.swift */; };
 		3F9657B72BE20F8300E64046 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9657B62BE20F8300E64046 /* ProgressViewController.swift */; };
 		3F9ACC8E2BEE296900E0ED1F /* AccountSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9ACC8D2BEE296900E0ED1F /* AccountSettingsTableViewController.swift */; };
@@ -67,6 +67,7 @@
 		3FDB96432BEDE006003BFD5F /* Time.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB96092BEDD40F003BFD5F /* Time.mp4 */; };
 		3FDB96442BEDE006003BFD5F /* Win.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB95FE2BEDD40F003BFD5F /* Win.mp4 */; };
 		3FDB96452BEDE006003BFD5F /* Work.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB95F92BEDD40F003BFD5F /* Work.mp4 */; };
+		3FDF3B0F2BF0A34800C8A90A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF3B0E2BF0A34800C8A90A /* SignInViewController.swift */; };
 		3FDFDF762BCCD9540015CC53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFDF752BCCD9540015CC53 /* AppDelegate.swift */; };
 		3FDFDF782BCCD9540015CC53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDFDF772BCCD9540015CC53 /* SceneDelegate.swift */; };
 		3FDFDF7F2BCCD9560015CC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDFDF7E2BCCD9560015CC53 /* Assets.xcassets */; };
@@ -88,7 +89,7 @@
 		3F56CDBC2BE8095500888486 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		3F61BF9A2BEDD7FE00375999 /* CurrentWeekCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeekCollectionViewCell.swift; sourceTree = "<group>"; };
 		3F6561A82BE20514003F1EEC /* CourseHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHome.swift; sourceTree = "<group>"; };
-		3F6768532BEE891700D69AFF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3F6768532BEE891700D69AFF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3F8E6DAC2BEA58E6004927F4 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		3F9657B62BE20F8300E64046 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		3F9ACC8D2BEE296900E0ED1F /* AccountSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsTableViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +137,7 @@
 		3FDB96072BEDD40F003BFD5F /* Tea.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Tea.mp4; path = Videos/Tea.mp4; sourceTree = SOURCE_ROOT; };
 		3FDB96082BEDD40F003BFD5F /* Pen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pen.mp4; path = Videos/Pen.mp4; sourceTree = SOURCE_ROOT; };
 		3FDB96092BEDD40F003BFD5F /* Time.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Time.mp4; path = Videos/Time.mp4; sourceTree = SOURCE_ROOT; };
+		3FDF3B0E2BF0A34800C8A90A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3FDFDF722BCCD9540015CC53 /* muka App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "muka App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDFDF752BCCD9540015CC53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FDFDF772BCCD9540015CC53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,7 +167,8 @@
 				3F6EFBE52BEBD3770037B7F5 /* Home-Courses */,
 				3F6EFBE42BEBD29B0037B7F5 /* Profile */,
 				3F528A102BE3C45900866293 /* challenges */,
-				3F6768532BEE891700D69AFF /* LoginViewController.swift */,
+				3F6768532BEE891700D69AFF /* SignUpViewController.swift */,
+				3FDF3B0E2BF0A34800C8A90A /* SignInViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -470,10 +473,11 @@
 				3F35DC052BDA19A600FFF6B0 /* Assessments-Quiz.swift in Sources */,
 				3FD7FE2A2BED1DE600BAACFD /* TakeChallenegeViewController.swift in Sources */,
 				3F4845792BEA43FD00CABF5B /* UserProfileModel.swift in Sources */,
+				3FDF3B0F2BF0A34800C8A90A /* SignInViewController.swift in Sources */,
 				3FD170C02BEFB08200436A87 /* PractiseTabViewController.swift in Sources */,
 				3F2029B32BEBB30600F9D1EC /* MedalCell.swift in Sources */,
 				3F8E6DAD2BEA58E6004927F4 /* EditProfileTableViewController.swift in Sources */,
-				3F6768542BEE891700D69AFF /* LoginViewController.swift in Sources */,
+				3F6768542BEE891700D69AFF /* SignUpViewController.swift in Sources */,
 				3F56CDBD2BE8095500888486 /* OnBoardingViewController.swift in Sources */,
 				3FACFE052BDFA1BE00F240B7 /* CourseHomeViewController.swift in Sources */,
 				3FD071512BEA282F002B9D93 /* AssessmentButtonCell.swift in Sources */,

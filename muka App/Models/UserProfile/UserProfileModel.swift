@@ -66,10 +66,10 @@ class User {
                                                                medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
                                         
                                         CourseCompletionByUser(courseId: 2, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
-                                                               medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
+                                                               medalsEarned: UserMedals(imageName: UIImage(named:"bronzeMedal")!, title: "Bronze Medal")),
                                         
                                         CourseCompletionByUser(courseId: 3, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
-                                                               medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal"))
+                                                               medalsEarned: UserMedals(imageName: UIImage(named:"silverMedal")!, title: "Silver Medal"))
                                        ],
                                        challengesCompleted:[levelAChallenge.basicChallenges[0], levelBChallenge.intermediateChallenges[3],
                                                             levelCChallenge.advancedChallenges[2]],
@@ -85,10 +85,10 @@ class User {
                                                                medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
                                         
                                         CourseCompletionByUser(courseId: 2, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
-                                                               medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal")),
+                                                               medalsEarned: UserMedals(imageName: UIImage(named:"bronzeMedal")!, title: "Bronze Medal")),
                                         
                                         CourseCompletionByUser(courseId: 3, courseName: "Basic Signs", badgesEarned:UserBadges(imageName:UIImage(named: "bronzeCompletionBadge")!, title: "Bronze Badge"),
-                                                               medalsEarned: UserMedals(imageName: UIImage(named:"goldMedal")!, title: "Gold Medal"))
+                                                               medalsEarned: UserMedals(imageName: UIImage(named:"silverMedal")!, title: "Silver Medal"))
                                        ],
                                        
                                        challengesCompleted:[levelAChallenge.basicChallenges[4], levelBChallenge.intermediateChallenges[1],
