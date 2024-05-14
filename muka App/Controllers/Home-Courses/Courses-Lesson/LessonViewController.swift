@@ -124,3 +124,4 @@ extension LessonViewController: UICollectionViewDelegate, UICollectionViewDataSo
         print("Take Assessment button tapped")
     }
 }
+
